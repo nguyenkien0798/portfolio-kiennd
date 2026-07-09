@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Kiên Nguyễn Đình | Front-end Developer",
+    "description": "Portfolio của Kiên Nguyễn Đình - Front-end Developer với 4+ năm kinh nghiệm ReactJS, NextJS. Đà Nẵng, Việt Nam.",
+    "keywords": "Front-end Developer, ReactJS, NextJS, Kiên Nguyễn Đình, Portfolio, Đà Nẵng"
+  },
+  "nav": {
+    "about": "Giới thiệu",
+    "education": "Học vấn",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "contact": "Liên hệ",
+    "contactCta": "Liên hệ"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "viewExperience": "Xem kinh nghiệm"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "subtitle": "Về tôi",
+    "currently": "Hiện tại, tôi là",
+    "currentlyAt": "tại",
+    "currentlySuffix": "",
+    "passion": "Tôi đam mê xây dựng giao diện đẹp, dễ tiếp cận và viết code sạch, dễ bảo trì.",
+    "yearsLabel": "năm kinh nghiệm phát triển frontend",
+    "strengths": "Điểm mạnh"
+  },
+  "skills": {
+    "title": "Kỹ năng",
+    "subtitle": "Tech Stack",
+    "categories": {
+      "framework": "Framework",
+      "language": "Ngôn ngữ",
+      "state": "State Management",
+      "api": "API",
+      "tool": "Công cụ",
+      "practice": "Thực hành"
+    }
+  },
+  "experience": {
+    "title": "Kinh nghiệm",
+    "subtitle": "Career",
+    "projects": "Dự án"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Get in touch",
+    "description": "Tôi đang mở cho các cơ hội mới. Dù bạn có câu hỏi hay chỉ muốn chào hỏi, tôi sẽ cố gắng phản hồi sớm nhất!",
+    "sayHello": "Gửi lời chào",
+    "phone": "Điện thoại",
+    "location": "Địa điểm",
+    "interests": "Sở thích",
+    "sendMessage": "Gửi tin nhắn",
+    "name": "Họ tên",
+    "namePlaceholder": "Tên của bạn",
+    "email": "Email",
+    "message": "Nội dung",
+    "messagePlaceholder": "Nội dung tin nhắn...",
+    "sendEmail": "Gửi email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtBy": "Thiết kế & xây dựng bởi",
+    "builtWith": "Xây dựng với Next.js & Tailwind CSS"
+  },
+  "language": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "switch": "Chuyển ngôn ngữ"
+  },
+  "personal": {
+    "name": "Kiên Nguyễn Đình",
+    "title": "Front-end Developer",
+    "tagline": "Xây dựng ứng dụng web hiệu năng cao, giao diện đẹp và dễ bảo trì",
+    "summary": "Frontend Developer với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
+    "location": "Đà Nẵng, Việt Nam"
+  },
+  "education": [
+    {
+      "school": "Duy Tân University",
+      "degree": "Bachelor of Software Engineering",
+      "period": "Oct, 2016 - Jan, 2021"
+    },
+    {
+      "school": "Iviettech Center",
+      "degree": "Major: Front-end",
+      "period": "Aug, 2022 - Jan, 2023"
+    }
+  ],
+  "softSkills": [
+    "Tiếng Anh – Khả năng làm việc cơ bản",
+    "Chăm chỉ và có trách nhiệm",
+    "Làm việc dưới áp lực và đúng deadline",
+    "Tinh thần đồng đội, ham học hỏi và chia sẻ",
+    "Thân thiện, hòa đồng trong môi trường nhóm"
+  ],
+  "interests": ["Phim ảnh", "Âm nhạc", "Bóng đá"],
+  "experiences": [
+    {
+      "company": "MSB Bank",
+      "role": "Front-end Developer",
+      "period": "10/2024 – Hiện tại",
+      "projects": [
+        {
+          "name": "Nền tảng E-commerce Doanh nghiệp",
+          "highlights": [
+            "Phát triển module frontend cho nền tảng thương mại điện tử doanh nghiệp: admin dashboard và vendor portal",
+            "Xây dựng UI component tái sử dụng với ReactJS cho quản lý sản phẩm, danh sách nhà cung cấp và tính năng phía khách hàng",
+            "Triển khai vendor portal: nhà cung cấp gửi offer, tham gia đấu thầu và quản lý thông tin sản phẩm",
+            "Tích hợp chữ ký số cho quy trình phê duyệt tài liệu an toàn",
+            "Phát triển admin dashboard: workflow, RBAC và cấu hình hệ thống"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Ministry of Culture",
+      "role": "Front-end Developer",
+      "period": "Song song",
+      "projects": [
+        {
+          "name": "Hệ thống Số hóa Chính phủ",
+          "highlights": [
+            "Phát triển và bảo trì module frontend cho hệ thống số hóa quản lý dân tộc và tôn giáo",
+            "Xây dựng UI component tái sử dụng với ReactJS",
+            "Tích hợp API backend và quản lý data flow với React Query",
+            "Phối hợp backend & QA đảm bảo ổn định và hiệu năng hệ thống"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Aither",
+      "role": "Front-end Developer",
+      "period": "08/2023 – 09/2024",
+      "projects": [
+        {
+          "name": "Hệ thống Bán vé",
+          "highlights": [
+            "Phát triển tính năng frontend cho hệ thống bán vé tích hợp vào website chính thức của nhà tổ chức",
+            "Xây dựng giao diện mua vé và quản lý vé",
+            "Tạo component tái sử dụng và tích hợp API backend"
+          ]
+        },
+        {
+          "name": "Website Tùy chỉnh Sản phẩm",
+          "highlights": [
+            "Phát triển tính năng cho website tùy chỉnh sản phẩm, cho phép người dùng chỉnh sửa thiết kế",
+            "Triển khai tương tác UI, bảo trì và cải thiện khả năng sử dụng"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Freelance & Client Projects",
+      "role": "Front-end Developer",
+      "period": "03/2022 – 08/2023",
+      "projects": [
+        {
+          "name": "Nền tảng Health Tech",
+          "highlights": [
+            "Phát triển giao diện admin và landing page cho nền tảng công nghệ y tế",
+            "Xây dựng layout responsive và tối ưu hiệu năng UI",
+            "Tích hợp GraphQL API và quản lý data flow"
+          ]
+        },
+        {
+          "name": "Admin Panel Nhà phát hành Game",
+          "highlights": [
+            "Phát triển admin panel cho nhà phát hành game cấu hình thiết lập game",
+            "Xây dựng UI component và quản lý logic frontend"
+          ]
+        },
+        {
+          "name": "Hệ thống Cấu hình Game",
+          "highlights": [
+            "Phát triển module frontend cho hệ thống cấu hình game theo template",
+            "Xây dựng giao diện cấu hình và tùy chỉnh game",
+            "Tích hợp API và tối ưu hiệu năng UI"
+          ]
+        },
+        {
+          "name": "E-commerce Thuê xe",
+          "highlights": [
+            "Phát triển ứng dụng thuê xe: danh sách xe, đặt xe và tích hợp thanh toán PayPal",
+            "Xây dựng kiến trúc frontend và state management"
+          ]
+        },
+        {
+          "name": "E-commerce Điện thoại",
+          "highlights": [
+            "Phát triển ứng dụng thương mại điện tử điện thoại: danh sách sản phẩm, chi tiết và giỏ hàng",
+            "Triển khai state management với Redux Saga"
+          ]
+        },
+        {
+          "name": "Hệ thống Quản lý Thực tập sinh",
+          "highlights": [
+            "Phát triển ứng dụng web quản lý thông tin thực tập sinh cho trường đại học và doanh nghiệp",
+            "Tham gia nghiên cứu, thiết kế và phát triển hệ thống"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Kien Nguyen Dinh | Front-end Developer",
+    "description": "Portfolio of Kien Nguyen Dinh - Front-end Developer with 4+ years of experience in ReactJS and NextJS. Da Nang, Vietnam.",
+    "keywords": "Front-end Developer, ReactJS, NextJS, Kien Nguyen Dinh, Portfolio, Da Nang"
+  },
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "contactCta": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "viewExperience": "View experience"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "About me",
+    "currently": "Currently, I'm a",
+    "currentlyAt": "based in",
+    "currentlySuffix": "",
+    "passion": "I'm passionate about crafting accessible, pixel-perfect user interfaces and writing clean, maintainable code that scales.",
+    "yearsLabel": "years of frontend development experience",
+    "strengths": "Strengths"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tech Stack",
+    "categories": {
+      "framework": "Framework",
+      "language": "Language",
+      "state": "State Management",
+      "api": "API",
+      "tool": "Tools",
+      "practice": "Practices"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Career",
+    "projects": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch",
+    "description": "I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "sayHello": "Say Hello",
+    "phone": "Phone",
+    "location": "Location",
+    "interests": "Interests",
+    "sendMessage": "Send a message",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "message": "Message",
+    "messagePlaceholder": "Your message...",
+    "sendEmail": "Send email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtBy": "Designed & built by",
+    "builtWith": "Built with Next.js & Tailwind CSS"
+  },
+  "language": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "switch": "Switch language"
+  },
+  "personal": {
+    "name": "Kien Nguyen Dinh",
+    "title": "Front-end Developer",
+    "tagline": "Building high-performance web apps with clean, maintainable interfaces",
+    "summary": "Frontend Developer with over 4 years of experience building scalable and high-performance web applications. Experienced in ReactJS, NextJS, and modern frontend development practices. Skilled in developing responsive user interfaces, integrating APIs, and optimizing application performance. Passionate about building clean, maintainable code and continuously improving technical expertise.",
+    "location": "Da Nang, Vietnam"
+  },
+  "education": [
+    {
+      "school": "Duy Tân University",
+      "degree": "Bachelor of Software Engineering",
+      "period": "Oct, 2016 - Jan, 2021"
+    },
+    {
+      "school": "Iviettech Center",
+      "degree": "Major: Front-end",
+      "period": "Aug, 2022 - Jan, 2023"
+    }
+  ],
+  "softSkills": [
+    "English – Basic working proficiency",
+    "Hardworking and responsible",
+    "Able to work under pressure and meet deadlines",
+    "Strong teamwork spirit, eager to learn and share knowledge",
+    "Friendly and sociable in team environments"
+  ],
+  "interests": ["Movies", "Music", "Football"],
+  "experiences": [
+    {
+      "company": "MSB Bank",
+      "role": "Front-end Developer",
+      "period": "Oct 2024 – Present",
+      "projects": [
+        {
+          "name": "Enterprise E-commerce Platform",
+          "highlights": [
+            "Developed frontend modules for an enterprise e-commerce platform including admin dashboard and vendor portal",
+            "Built responsive and reusable UI components with ReactJS for product management, vendor listings, and customer-facing features",
+            "Implemented vendor portal features: submit offers, participate in bidding, and manage product information",
+            "Integrated digital signature functionality for secure document approval workflows",
+            "Developed admin dashboard features for workflow management, RBAC, and system configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Ministry of Culture",
+      "role": "Front-end Developer",
+      "period": "Concurrent",
+      "projects": [
+        {
+          "name": "Government Digitalization System",
+          "highlights": [
+            "Developed and maintained frontend modules for a government digitalization system managing ethnic and religious population data",
+            "Built reusable UI components using ReactJS",
+            "Integrated backend APIs and managed data flow with React Query",
+            "Collaborated with backend and QA teams to ensure system stability and performance"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Aither",
+      "role": "Front-end Developer",
+      "period": "Aug 2023 – Sep 2024",
+      "projects": [
+        {
+          "name": "Ticket Sales Platform",
+          "highlights": [
+            "Developed frontend features for a ticket sales system integrated into promoters' official websites",
+            "Built user interfaces for ticket purchasing and management",
+            "Created reusable components and integrated backend APIs"
+          ]
+        },
+        {
+          "name": "Product Customization Website",
+          "highlights": [
+            "Developed features for a product customization website allowing users to modify product design fields",
+            "Implemented UI interactions, maintenance, and usability improvements"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Freelance & Client Projects",
+      "role": "Front-end Developer",
+      "period": "Mar 2022 – Aug 2023",
+      "projects": [
+        {
+          "name": "Health Tech Platform",
+          "highlights": [
+            "Developed admin interfaces and landing pages for a health technology platform",
+            "Built responsive layouts and optimized UI performance",
+            "Integrated GraphQL APIs and managed frontend data flow"
+          ]
+        },
+        {
+          "name": "Game Publisher Admin Panel",
+          "highlights": [
+            "Developed admin panels for game publishers to configure game settings",
+            "Built UI components and managed frontend logic"
+          ]
+        },
+        {
+          "name": "Game Configuration System",
+          "highlights": [
+            "Developed frontend modules for a game configuration system that generates games based on templates",
+            "Built configuration interfaces for game setup and customization",
+            "Implemented API integration and optimized UI performance"
+          ]
+        },
+        {
+          "name": "Car Rental E-commerce",
+          "highlights": [
+            "Developed a car rental e-commerce app with listing, booking, and PayPal payment integration",
+            "Built frontend architecture and state management"
+          ]
+        },
+        {
+          "name": "Smartphone E-commerce",
+          "highlights": [
+            "Developed an e-commerce web app for browsing and purchasing smartphones online",
+            "Built product listing, detail pages, and shopping cart with Redux Saga"
+          ]
+        },
+        {
+          "name": "Intern Management System",
+          "highlights": [
+            "Developed a web application to help universities and companies manage intern information",
+            "Participated in system research, design, and development"
+          ]
+        }
+      ]
+    }
+  ]
+}
