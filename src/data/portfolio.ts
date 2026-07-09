@@ -3,6 +3,8 @@ export const contactInfo = {
   email: "kiennguyen0798@gmail.com",
   github: "https://github.com/nguyenkien0798",
   githubUsername: "nguyenkien0798",
+  facebook: "https://www.facebook.com/",
+  linkedin: "https://www.linkedin.com/in/",
   yearsOfExperience: "4+",
 };
 

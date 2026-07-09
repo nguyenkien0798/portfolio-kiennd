@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
+import styles from "./ScrollLayout.module.scss";
 
 const MAIN_SCROLL_ID = "main-scroll";
 
@@ -83,7 +84,7 @@ export function scrollToSection(href: string) {
 
 export function MainScroll({ children }: { children: ReactNode }) {
   return (
-    <main id={MAIN_SCROLL_ID} className="layout-main">
+    <main id={MAIN_SCROLL_ID} className={styles.main}>
       {children}
     </main>
   );

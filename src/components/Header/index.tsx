@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { navAnchors } from "@/data/portfolio";
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");

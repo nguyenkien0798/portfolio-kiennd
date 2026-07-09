@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import { experienceTech } from "@/data/portfolio";
-import { SectionTitle } from "./SectionTitle";
+import { SectionTitle } from "@/components/SectionTitle";
+import styles from "./Experience.module.scss";
+import sectionStyles from "@/components/SectionTitle/Section.module.scss";
 
 type Project = {
   name: string;
@@ -20,10 +22,10 @@ export default function Experience() {
   const experiences = tRoot.raw("experiences") as ExperienceItem[];
 
   return (
-    <section id="experience" className="section-block">
+    <section id="experience" className={sectionStyles.block}>
       <SectionTitle title={t("experience")} />
 
-      <div className="experience-list">
+      <div className={styles.list}>
         {experiences.map((exp, companyIndex) => {
           const highlights = exp.projects.flatMap((project) => project.highlights);
           const techStack = [
@@ -38,12 +40,12 @@ export default function Experience() {
           return (
             <article
               key={`${exp.company}-${companyIndex}`}
-              className="experience-row"
+              className={styles.row}
             >
-              <div className="experience-date">{exp.period}</div>
+              <div className={styles.date}>{exp.period}</div>
 
-              <div className="experience-content">
-                <h3 className="experience-title">
+              <div>
+                <h3 className={styles.title}>
                   <span>{exp.role}</span>
                   <span className="text-muted"> · </span>
                   <span>{exp.company}</span>
@@ -56,16 +58,16 @@ export default function Experience() {
                         <h4 className="mb-2 text-sm font-medium text-foreground">
                           {project.name}
                         </h4>
-                        <p className="experience-description">
+                        <p className={styles.description}>
                           {project.highlights.join(" ")}
                         </p>
                         {(experienceTech[companyIndex]?.[projectIndex] ?? [])
                           .length > 0 && (
-                          <ul className="experience-tech">
+                          <ul className={styles.techList}>
                             {(
                               experienceTech[companyIndex]?.[projectIndex] ?? []
                             ).map((tech) => (
-                              <li key={tech} className="tech-tag">
+                              <li key={tech} className={styles.tag}>
                                 {tech}
                               </li>
                             ))}
@@ -76,13 +78,13 @@ export default function Experience() {
                   </div>
                 ) : (
                   <>
-                    <p className="experience-description">
+                    <p className={styles.description}>
                       {highlights.join(" ")}
                     </p>
                     {techStack.length > 0 && (
-                      <ul className="experience-tech">
+                      <ul className={styles.techList}>
                         {techStack.map((tech) => (
-                          <li key={tech} className="tech-tag">
+                          <li key={tech} className={styles.tag}>
                             {tech}
                           </li>
                         ))}

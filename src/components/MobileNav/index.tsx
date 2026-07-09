@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { navAnchors } from "@/data/portfolio";
-import { scrollToSection, useActiveSection } from "./ScrollLayout";
+import { scrollToSection, useActiveSection } from "@/components/ScrollLayout";
+import sideNavStyles from "@/components/Sidebar/SideNav.module.scss";
 
 export default function MobileNav() {
   const t = useTranslations("nav");
@@ -62,11 +63,11 @@ export default function MobileNav() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className={`side-nav-link ${
-                      isActive ? "side-nav-link-active" : ""
+                    className={`${sideNavStyles.link} ${
+                      isActive ? sideNavStyles.linkActive : ""
                     }`}
                   >
-                    <span className="side-nav-line" aria-hidden />
+                    <span className={sideNavStyles.line} aria-hidden />
                     <span>{t(link.key)}</span>
                   </a>
                 </li>

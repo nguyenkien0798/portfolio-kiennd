@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
-import { Github, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { contactInfo } from "@/data/portfolio";
+import SocialLinks from "@/components/SocialLinks";
+import sidebarStyles from "@/components/Sidebar/Sidebar.module.scss";
 
 export default function MobileIntro() {
   const tPersonal = useTranslations("personal");
@@ -14,7 +16,7 @@ export default function MobileIntro() {
         {tPersonal("title")}
       </h2>
 
-      <ul className="sidebar-personal-info mt-4">
+      <ul className={`${sidebarStyles.personalInfo} mt-4`}>
         <li>
           <MapPin size={14} className="shrink-0 text-accent" aria-hidden />
           <span>{tPersonal("location")}</span>
@@ -27,18 +29,9 @@ export default function MobileIntro() {
           <Mail size={14} className="shrink-0 text-accent" aria-hidden />
           <span>{contactInfo.email}</span>
         </li>
-        <li>
-          <Github size={14} className="shrink-0 text-accent" aria-hidden />
-          <a
-            href={contactInfo.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="sidebar-personal-link"
-          >
-            {contactInfo.githubUsername}
-          </a>
-        </li>
       </ul>
+
+      <SocialLinks className="mt-6" />
     </header>
   );
 }

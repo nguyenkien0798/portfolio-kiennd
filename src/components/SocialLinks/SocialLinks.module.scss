@@ -1,0 +1,17 @@
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.link {
+  color: var(--muted);
+  transition:
+    color 0.25s var(--easing),
+    transform 0.25s var(--easing);
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  color: var(--foreground);
+}

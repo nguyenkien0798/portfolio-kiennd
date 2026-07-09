@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
-import { SectionTitle } from "./SectionTitle";
+import { SectionTitle } from "@/components/SectionTitle";
+import aboutStyles from "./About.module.scss";
+import sectionStyles from "@/components/SectionTitle/Section.module.scss";
 
 export default function About() {
   const t = useTranslations("nav");
@@ -7,10 +9,10 @@ export default function About() {
   const tPersonal = useTranslations("personal");
 
   return (
-    <section id="about" className="section-block">
+    <section id="about" className={sectionStyles.block}>
       <SectionTitle title={t("about")} />
 
-      <div className="space-y-4 prose-muted">
+      <div className={`space-y-4 ${aboutStyles.prose}`}>
         <p>{tPersonal("summary")}</p>
         <p>
           {tAbout("currently")}{" "}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import styles from "./Reveal.module.scss";
 
 type RevealProps = {
   children: ReactNode;
@@ -37,7 +38,7 @@ export default function Reveal({
   return (
     <div
       ref={ref}
-      className={`reveal ${visible ? "reveal-visible" : ""} ${className}`}
+      className={`${styles.reveal} ${visible ? styles.revealVisible : ""} ${className}`}
       style={{ transitionDelay: visible ? `${delayMs}ms` : "0ms" }}
     >
       {children}

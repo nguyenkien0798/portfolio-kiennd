@@ -1,0 +1,11 @@
+.prose {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: var(--muted);
+}
+
+@media (min-width: 640px) {
+  .prose {
+    font-size: 1rem;
+  }
+}

@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import "../globals.css";
+import "../globals.scss";
 
 type Props = {
   children: React.ReactNode;

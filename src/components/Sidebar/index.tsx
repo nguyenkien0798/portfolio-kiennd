@@ -1,9 +1,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Github, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { contactInfo, navAnchors } from "@/data/portfolio";
-import { scrollToSection, useActiveSection } from "./ScrollLayout";
+import { scrollToSection, useActiveSection } from "@/components/ScrollLayout";
+import SocialLinks from "@/components/SocialLinks";
+import sidebarStyles from "./Sidebar.module.scss";
+import sideNavStyles from "./SideNav.module.scss";
 
 export default function Sidebar() {
   const t = useTranslations("nav");
@@ -11,9 +14,9 @@ export default function Sidebar() {
   const activeSection = useActiveSection();
 
   return (
-    <aside className="layout-sidebar" aria-label="Profile sidebar">
-      <div className="layout-sidebar-inner">
-        <div className="layout-sidebar-top">
+    <aside className={sidebarStyles.sidebar} aria-label="Profile sidebar">
+      <div className={sidebarStyles.inner}>
+        <div className={sidebarStyles.top}>
           <h1 className="text-3xl font-bold leading-tight tracking-tight text-foreground xl:text-4xl 2xl:text-5xl">
             {tPersonal("name")}
           </h1>
@@ -21,7 +24,7 @@ export default function Sidebar() {
             {tPersonal("title")}
           </h2>
 
-          <ul className="sidebar-personal-info">
+          <ul className={sidebarStyles.personalInfo}>
             <li>
               <MapPin size={14} className="shrink-0 text-accent" aria-hidden />
               <span>{tPersonal("location")}</span>
@@ -33,17 +36,6 @@ export default function Sidebar() {
             <li>
               <Mail size={14} className="shrink-0 text-accent" aria-hidden />
               <span>{contactInfo.email}</span>
-            </li>
-            <li>
-              <Github size={14} className="shrink-0 text-accent" aria-hidden />
-              <a
-                href={contactInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="sidebar-personal-link"
-              >
-                {contactInfo.githubUsername}
-              </a>
             </li>
           </ul>
 
@@ -59,11 +51,11 @@ export default function Sidebar() {
                         e.preventDefault();
                         scrollToSection(link.href);
                       }}
-                      className={`side-nav-link ${
-                        isActive ? "side-nav-link-active" : ""
+                      className={`${sideNavStyles.link} ${
+                        isActive ? sideNavStyles.linkActive : ""
                       }`}
                     >
-                      <span className="side-nav-line" aria-hidden />
+                      <span className={sideNavStyles.line} aria-hidden />
                       <span>{t(link.key)}</span>
                     </a>
                   </li>
@@ -71,6 +63,10 @@ export default function Sidebar() {
               })}
             </ul>
           </nav>
+        </div>
+
+        <div className={sidebarStyles.footer}>
+          <SocialLinks />
         </div>
       </div>
     </aside>

@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import MouseGlow from "@/components/MouseGlow";
 import { MainScroll } from "@/components/ScrollLayout";
+import layoutStyles from "@/components/ScrollLayout/ScrollLayout.module.scss";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -25,7 +26,7 @@ export default async function Home({ params }: Props) {
       <MouseGlow />
       <MobileNav />
 
-      <div className="site-shell">
+      <div className={layoutStyles.shell}>
         <Sidebar />
         <MainScroll>
           <MobileIntro />

@@ -1,0 +1,17 @@
+.glow {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(100, 255, 218, 0.09),
+    transparent 42%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow {
+    display: none;
+  }
+}

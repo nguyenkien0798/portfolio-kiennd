@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import styles from "./MouseGlow.module.scss";
 
 export default function MouseGlow() {
   useEffect(() => {
@@ -25,5 +26,5 @@ export default function MouseGlow() {
     return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
 
-  return <div className="mouse-glow" aria-hidden />;
+  return <div className={styles.glow} aria-hidden />;
 }
