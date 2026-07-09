@@ -27,6 +27,10 @@ export async function generateMetadata({
     description: t("description"),
     keywords: t("keywords").split(", "),
     authors: [{ name: "Kien Nguyen Dinh" }],
+    icons: {
+      icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+      apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }],
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),
