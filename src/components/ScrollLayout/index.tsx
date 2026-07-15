@@ -21,27 +21,19 @@ export function useActiveSection() {
 
   useEffect(() => {
     const updateActiveSection = () => {
-      const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
       const container = document.getElementById(MAIN_SCROLL_ID);
       const sections =
         container?.querySelectorAll<HTMLElement>("section[id]") ?? [];
 
       if (!sections.length) return;
 
-      const scrollY =
-        isDesktop && container
-          ? container.scrollTop + 120
-          : window.scrollY + 120;
+      // Use viewport position — offsetTop breaks when ancestors have transform
+      // (e.g. Reveal wrappers), which made mobile always stick on the last tab.
+      const marker = 120;
 
       for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        const offset =
-          isDesktop && container
-            ? getScrollOffset(section, container)
-            : section.offsetTop;
-
-        if (offset <= scrollY) {
-          setActiveSection(section.id);
+        if (sections[i].getBoundingClientRect().top <= marker) {
+          setActiveSection(sections[i].id);
           return;
         }
       }

@@ -8,8 +8,9 @@ export default function MouseGlow() {
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
+    const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
 
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion || !hasFinePointer) return;
 
     const onMouseMove = (event: MouseEvent) => {
       document.documentElement.style.setProperty(

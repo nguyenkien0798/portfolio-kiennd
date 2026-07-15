@@ -6,7 +6,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-12 pb-8 font-mono text-xs text-muted lg:mt-24">
+    <footer className="mt-10 pb-[max(2rem,env(safe-area-inset-bottom))] font-mono text-xs text-muted sm:mt-12 lg:mt-20">
       <p>
         {t("builtBy")}{" "}
         <span className="text-foreground">{tPersonal("name")}</span>.{" "}

@@ -26,8 +26,8 @@ export default function MobileNav() {
 
   return (
     <div className="fixed inset-x-0 top-0 z-50 lg:hidden">
-      <div className="flex items-center justify-between border-b border-border/60 bg-background/90 px-6 py-4 backdrop-blur-md">
-        <span className="font-mono text-xs uppercase tracking-widest text-foreground">
+      <div className="flex items-center justify-between gap-3 border-b border-border/60 bg-background/90 px-5 pb-3 pt-[max(0.75rem,env(safe-area-inset-top))] backdrop-blur-md sm:px-6">
+        <span className="min-w-0 truncate font-mono text-xs uppercase tracking-widest text-foreground">
           {navAnchors.find((l) => l.href === `#${activeSection}`)
             ? t(
                 navAnchors.find((l) => l.href === `#${activeSection}`)!
@@ -35,21 +35,20 @@ export default function MobileNav() {
               )
             : t("about")}
         </span>
-        <div className="flex items-center gap-4">
-          <button
-            type="button"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-            className="text-foreground"
-          >
-            {isOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          className="inline-flex h-11 w-11 shrink-0 items-center justify-center text-foreground"
+        >
+          {isOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
       </div>
 
       {isOpen && (
         <nav
-          className="border-b border-border bg-background px-6 py-6"
+          className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-b border-border bg-background px-5 py-5 sm:px-6"
           aria-label="Mobile navigation"
         >
           <ul>

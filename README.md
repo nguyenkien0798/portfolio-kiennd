@@ -1,6 +1,6 @@
 # Portfolio - Kiên Nguyễn Đình
 
-Trang portfolio cá nhân của Front-end Developer, xây dựng bằng **Next.js 15**, **TypeScript** và **Tailwind CSS**.
+Trang portfolio cá nhân của Front-end Engineer, xây dựng bằng **Next.js 15**, **TypeScript** và **Tailwind CSS**.
 
 ## Clone from brittanychiang.com
 

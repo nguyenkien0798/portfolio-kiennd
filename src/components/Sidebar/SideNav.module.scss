@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 0;
+  min-height: 2.75rem;
+  padding: 0.65rem 0;
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   font-weight: 500;
@@ -12,8 +13,17 @@
   transition: color 0.25s var(--easing);
 }
 
-.link:hover {
-  color: var(--foreground);
+@media (min-width: 1024px) {
+  .link {
+    min-height: 0;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    color: var(--foreground);
+  }
 }
 
 .line {

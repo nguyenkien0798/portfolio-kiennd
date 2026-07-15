@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { navAnchors } from "@/data/portfolio";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -45,7 +44,6 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <LanguageSwitcher />
           <a
             href="#contact"
             className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
@@ -55,7 +53,6 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-3 md:hidden">
-          <LanguageSwitcher />
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}

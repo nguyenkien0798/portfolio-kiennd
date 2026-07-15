@@ -4,16 +4,27 @@
 }
 
 .main {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 42rem;
+  margin-inline: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   padding-bottom: 3rem;
+  overflow-x: clip;
+}
+
+@media (min-width: 640px) {
+  .main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .main {
+    max-width: none;
+    margin-inline: 0;
     margin-left: clamp(280px, 42vw, 480px);
     width: auto;
-    flex: 1;
     height: 100vh;
     height: 100dvh;
     overflow-y: auto;

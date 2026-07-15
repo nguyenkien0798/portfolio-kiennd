@@ -8,11 +8,11 @@ export default function MobileIntro() {
   const tPersonal = useTranslations("personal");
 
   return (
-    <header className="mb-10 pt-20 lg:hidden">
-      <h1 className="text-4xl font-bold tracking-tight text-foreground">
+    <header className="mb-8 pt-[calc(4.75rem+env(safe-area-inset-top))] sm:mb-10 lg:hidden">
+      <h1 className="text-[clamp(1.75rem,7vw,2.25rem)] font-bold leading-tight tracking-tight text-foreground">
         {tPersonal("name")}
       </h1>
-      <h2 className="mt-3 text-lg font-medium text-foreground">
+      <h2 className="mt-2 text-base font-medium text-foreground sm:mt-3 sm:text-lg">
         {tPersonal("title")}
       </h2>
 

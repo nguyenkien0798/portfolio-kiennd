@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Kiên Nguyễn Đình | Front-end Developer",
-    "description": "Portfolio của Kiên Nguyễn Đình - Front-end Developer với 4+ năm kinh nghiệm ReactJS, NextJS. Đà Nẵng, Việt Nam.",
-    "keywords": "Front-end Developer, ReactJS, NextJS, Kiên Nguyễn Đình, Portfolio, Đà Nẵng"
+    "title": "Kiên Nguyễn Đình | Front-end Engineer",
+    "description": "Portfolio của Kiên Nguyễn Đình - Front-end Engineer với 4+ năm kinh nghiệm ReactJS, NextJS. Đà Nẵng, Việt Nam.",
+    "keywords": "Front-end Engineer, ReactJS, NextJS, Kiên Nguyễn Đình, Portfolio, Đà Nẵng"
   },
   "nav": {
     "about": "Giới thiệu",
@@ -41,7 +41,10 @@
   "experience": {
     "title": "Kinh nghiệm",
     "subtitle": "Career",
-    "projects": "Dự án"
+    "projects": "Dự án",
+    "customer": "Khách hàng",
+    "teamSize": "Quy mô team",
+    "technologies": "Công nghệ"
   },
   "contact": {
     "title": "Liên hệ",
@@ -71,9 +74,9 @@
   },
   "personal": {
     "name": "Kiên Nguyễn Đình",
-    "title": "Front-end Developer",
+    "title": "Front-end Engineer",
     "tagline": "Xây dựng ứng dụng web hiệu năng cao, giao diện đẹp và dễ bảo trì",
-    "summary": "Frontend Developer với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
+    "summary": "Frontend Engineer với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
     "location": "Đà Nẵng, Việt Nam"
   },
   "education": [
@@ -95,48 +98,84 @@
     "Tinh thần đồng đội, ham học hỏi và chia sẻ",
     "Thân thiện, hòa đồng trong môi trường nhóm"
   ],
-  "interests": ["Phim ảnh", "Âm nhạc", "Bóng đá"],
+  "interests": [
+    "Phim ảnh",
+    "Âm nhạc",
+    "Bóng đá"
+  ],
   "experiences": [
     {
-      "company": "MSB Bank",
-      "role": "Front-end Developer",
-      "period": "10/2024 – Hiện tại",
+      "company": "Personal Projects",
+      "role": "Front-end Engineer",
+      "period": "",
       "projects": [
         {
-          "name": "Nền tảng E-commerce Doanh nghiệp",
+          "name": "Hệ thống Quản lý Thực tập sinh",
+          "teamSize": "2",
           "highlights": [
-            "Phát triển module frontend cho nền tảng thương mại điện tử doanh nghiệp: admin dashboard và vendor portal",
-            "Xây dựng UI component tái sử dụng với ReactJS cho quản lý sản phẩm, danh sách nhà cung cấp và tính năng phía khách hàng",
-            "Triển khai vendor portal: nhà cung cấp gửi offer, tham gia đấu thầu và quản lý thông tin sản phẩm",
-            "Tích hợp chữ ký số cho quy trình phê duyệt tài liệu an toàn",
-            "Phát triển admin dashboard: workflow, RBAC và cấu hình hệ thống"
+            "Phát triển ứng dụng web quản lý thông tin thực tập sinh cho trường đại học và doanh nghiệp",
+            "Tham gia nghiên cứu, thiết kế và phát triển hệ thống"
+          ]
+        },
+        {
+          "name": "Ứng dụng Cửa hàng Điện thoại",
+          "highlights": [
+            "Phát triển ứng dụng thương mại điện tử mua bán điện thoại trực tuyến",
+            "Xây dựng module frontend chính: danh sách sản phẩm, trang chi tiết và giỏ hàng",
+            "Triển khai state management với Redux Saga"
+          ]
+        },
+        {
+          "name": "Ứng dụng Web Thuê xe",
+          "highlights": [
+            "Phát triển ứng dụng thuê xe: danh sách xe, đặt xe và luồng thanh toán",
+            "Tích hợp cổng thanh toán PayPal cho giao dịch online",
+            "Xây dựng kiến trúc frontend và state management"
           ]
         }
       ]
     },
     {
-      "company": "Ministry of Culture",
-      "role": "Front-end Developer",
-      "period": "Song song",
+      "company": "Papagroup Technology",
+      "role": "Front-end Engineer",
+      "period": "03/2022 – 08/2023",
       "projects": [
         {
-          "name": "Hệ thống Số hóa Chính phủ",
+          "name": "PGO Web Event / Admin / Landing Page",
+          "teamSize": "24",
           "highlights": [
-            "Phát triển và bảo trì module frontend cho hệ thống số hóa quản lý dân tộc và tôn giáo",
-            "Xây dựng UI component tái sử dụng với ReactJS",
-            "Tích hợp API backend và quản lý data flow với React Query",
-            "Phối hợp backend & QA đảm bảo ổn định và hiệu năng hệ thống"
+            "Phát triển giao diện admin và landing page cho nền tảng công nghệ y tế",
+            "Xây dựng layout responsive và tối ưu hiệu năng UI",
+            "Tích hợp GraphQL API và quản lý data flow frontend"
+          ]
+        },
+        {
+          "name": "Game Configuration Admin (Boom / Fish)",
+          "teamSize": "4",
+          "highlights": [
+            "Phát triển admin panel cho nhà phát hành game cấu hình thiết lập game",
+            "Xây dựng UI component và quản lý logic frontend"
+          ]
+        },
+        {
+          "name": "PapaHub – Nền tảng Cấu hình Game",
+          "teamSize": "18",
+          "highlights": [
+            "Phát triển module frontend cho hệ thống cấu hình game theo template",
+            "Xây dựng giao diện setup và tùy chỉnh game",
+            "Tích hợp API và tối ưu hiệu năng UI"
           ]
         }
       ]
     },
     {
-      "company": "Aither",
-      "role": "Front-end Developer",
+      "company": "Est Rouge",
+      "role": "Front-end Engineer",
       "period": "08/2023 – 09/2024",
       "projects": [
         {
-          "name": "Hệ thống Bán vé",
+          "name": "SST – Nền tảng Tích hợp Bán vé (Product)",
+          "teamSize": "12",
           "highlights": [
             "Phát triển tính năng frontend cho hệ thống bán vé tích hợp vào website chính thức của nhà tổ chức",
             "Xây dựng giao diện mua vé và quản lý vé",
@@ -144,61 +183,46 @@
           ]
         },
         {
-          "name": "Website Tùy chỉnh Sản phẩm",
+          "name": "Aither – Website Tùy chỉnh Thiết kế Sản phẩm",
+          "customer": "Aither",
+          "teamSize": "6",
           "highlights": [
-            "Phát triển tính năng cho website tùy chỉnh sản phẩm, cho phép người dùng chỉnh sửa thiết kế",
-            "Triển khai tương tác UI, bảo trì và cải thiện khả năng sử dụng"
+            "Phát triển tính năng cho website tùy chỉnh sản phẩm, cho phép người dùng chỉnh sửa các trường thiết kế",
+            "Triển khai tương tác UI và bảo trì chức năng website",
+            "Sửa lỗi và cải thiện khả năng sử dụng hệ thống"
           ]
         }
       ]
     },
     {
-      "company": "Freelance & Client Projects",
-      "role": "Front-end Developer",
-      "period": "03/2022 – 08/2023",
+      "company": "FPT IS",
+      "role": "Front-end Engineer",
+      "period": "10/2024 – Hiện tại",
       "projects": [
         {
-          "name": "Nền tảng Health Tech",
+          "name": "Procuva – Ứng dụng Web E-commerce",
+          "customer": "MSB Bank",
+          "teamSize": "44",
           "highlights": [
-            "Phát triển giao diện admin và landing page cho nền tảng công nghệ y tế",
-            "Xây dựng layout responsive và tối ưu hiệu năng UI",
-            "Tích hợp GraphQL API và quản lý data flow"
+            "Phát triển module frontend cho nền tảng thương mại điện tử doanh nghiệp: admin dashboard và vendor portal",
+            "Xây dựng UI component responsive, tái sử dụng với ReactJS cho quản lý sản phẩm, danh sách nhà cung cấp và tính năng phía khách hàng",
+            "Triển khai vendor portal: nhà cung cấp gửi offer, tham gia đấu thầu và quản lý thông tin sản phẩm",
+            "Tích hợp chữ ký số hỗ trợ phê duyệt tài liệu an toàn trong quy trình nghiệp vụ",
+            "Phát triển admin dashboard: quản lý workflow, RBAC và cấu hình hệ thống",
+            "Tích hợp API backend và xử lý data flow frontend giữa các service",
+            "Phối hợp backend & QA để xử lý sự cố, đảm bảo ổn định và hiệu năng hệ thống"
           ]
         },
         {
-          "name": "Admin Panel Nhà phát hành Game",
+          "name": "DTTG – Hệ thống Số hóa Chính phủ",
+          "customer": "Bộ Văn hóa",
+          "teamSize": "30",
           "highlights": [
-            "Phát triển admin panel cho nhà phát hành game cấu hình thiết lập game",
-            "Xây dựng UI component và quản lý logic frontend"
-          ]
-        },
-        {
-          "name": "Hệ thống Cấu hình Game",
-          "highlights": [
-            "Phát triển module frontend cho hệ thống cấu hình game theo template",
-            "Xây dựng giao diện cấu hình và tùy chỉnh game",
-            "Tích hợp API và tối ưu hiệu năng UI"
-          ]
-        },
-        {
-          "name": "E-commerce Thuê xe",
-          "highlights": [
-            "Phát triển ứng dụng thuê xe: danh sách xe, đặt xe và tích hợp thanh toán PayPal",
-            "Xây dựng kiến trúc frontend và state management"
-          ]
-        },
-        {
-          "name": "E-commerce Điện thoại",
-          "highlights": [
-            "Phát triển ứng dụng thương mại điện tử điện thoại: danh sách sản phẩm, chi tiết và giỏ hàng",
-            "Triển khai state management với Redux Saga"
-          ]
-        },
-        {
-          "name": "Hệ thống Quản lý Thực tập sinh",
-          "highlights": [
-            "Phát triển ứng dụng web quản lý thông tin thực tập sinh cho trường đại học và doanh nghiệp",
-            "Tham gia nghiên cứu, thiết kế và phát triển hệ thống"
+            "Phát triển và bảo trì module frontend cho hệ thống số hóa quản lý dữ liệu dân tộc và tôn giáo tại Việt Nam",
+            "Xây dựng UI component tái sử dụng với ReactJS",
+            "Tích hợp API backend và quản lý data flow với state management React",
+            "Phối hợp backend & QA đảm bảo ổn định và hiệu năng hệ thống",
+            "Điều tra và sửa lỗi để nâng cao độ tin cậy hệ thống"
           ]
         }
       ]

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Kien Nguyen Dinh | Front-end Developer",
-    "description": "Portfolio of Kien Nguyen Dinh - Front-end Developer with 4+ years of experience in ReactJS and NextJS. Da Nang, Vietnam.",
-    "keywords": "Front-end Developer, ReactJS, NextJS, Kien Nguyen Dinh, Portfolio, Da Nang"
+    "title": "Kien Nguyen Dinh | Front-end Engineer",
+    "description": "Portfolio of Kien Nguyen Dinh - Front-end Engineer with 4+ years of experience in ReactJS and NextJS. Da Nang, Vietnam.",
+    "keywords": "Front-end Engineer, ReactJS, NextJS, Kien Nguyen Dinh, Portfolio, Da Nang"
   },
   "nav": {
     "about": "About",
@@ -41,7 +41,10 @@
   "experience": {
     "title": "Experience",
     "subtitle": "Career",
-    "projects": "Projects"
+    "projects": "Projects",
+    "customer": "Customer",
+    "teamSize": "Team size",
+    "technologies": "Technologies"
   },
   "contact": {
     "title": "Contact",
@@ -71,9 +74,9 @@
   },
   "personal": {
     "name": "Kien Nguyen Dinh",
-    "title": "Front-end Developer",
+    "title": "Front-end Engineer",
     "tagline": "Building high-performance web apps with clean, maintainable interfaces",
-    "summary": "Frontend Developer with over 4 years of experience building scalable and high-performance web applications. Experienced in ReactJS, NextJS, and modern frontend development practices. Skilled in developing responsive user interfaces, integrating APIs, and optimizing application performance. Passionate about building clean, maintainable code and continuously improving technical expertise.",
+    "summary": "Frontend Engineer with over 4 years of experience building scalable and high-performance web applications. Experienced in ReactJS, NextJS, and modern frontend development practices. Skilled in developing responsive user interfaces, integrating APIs, and optimizing application performance. Passionate about building clean, maintainable code and continuously improving technical expertise.",
     "location": "Da Nang, Vietnam"
   },
   "education": [
@@ -95,70 +98,51 @@
     "Strong teamwork spirit, eager to learn and share knowledge",
     "Friendly and sociable in team environments"
   ],
-  "interests": ["Movies", "Music", "Football"],
+  "interests": [
+    "Movies",
+    "Music",
+    "Football"
+  ],
   "experiences": [
     {
-      "company": "MSB Bank",
-      "role": "Front-end Developer",
-      "period": "Oct 2024 – Present",
+      "company": "Personal Projects",
+      "role": "Front-end Engineer",
+      "period": "",
       "projects": [
         {
-          "name": "Enterprise E-commerce Platform",
+          "name": "Intern Management System",
+          "teamSize": "2",
           "highlights": [
-            "Developed frontend modules for an enterprise e-commerce platform including admin dashboard and vendor portal",
-            "Built responsive and reusable UI components with ReactJS for product management, vendor listings, and customer-facing features",
-            "Implemented vendor portal features: submit offers, participate in bidding, and manage product information",
-            "Integrated digital signature functionality for secure document approval workflows",
-            "Developed admin dashboard features for workflow management, RBAC, and system configuration"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "Ministry of Culture",
-      "role": "Front-end Developer",
-      "period": "Concurrent",
-      "projects": [
-        {
-          "name": "Government Digitalization System",
-          "highlights": [
-            "Developed and maintained frontend modules for a government digitalization system managing ethnic and religious population data",
-            "Built reusable UI components using ReactJS",
-            "Integrated backend APIs and managed data flow with React Query",
-            "Collaborated with backend and QA teams to ensure system stability and performance"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "Aither",
-      "role": "Front-end Developer",
-      "period": "Aug 2023 – Sep 2024",
-      "projects": [
-        {
-          "name": "Ticket Sales Platform",
-          "highlights": [
-            "Developed frontend features for a ticket sales system integrated into promoters' official websites",
-            "Built user interfaces for ticket purchasing and management",
-            "Created reusable components and integrated backend APIs"
+            "Developed a web application to help universities and companies manage intern information",
+            "Participated in system research, design, and development"
           ]
         },
         {
-          "name": "Product Customization Website",
+          "name": "Phone Store Application",
           "highlights": [
-            "Developed features for a product customization website allowing users to modify product design fields",
-            "Implemented UI interactions, maintenance, and usability improvements"
+            "Developed an e-commerce web application for browsing and purchasing smartphones online",
+            "Built core frontend modules including product listing, product detail pages, and shopping cart functionality",
+            "Implemented state management using Redux Saga"
+          ]
+        },
+        {
+          "name": "Car Rental Web Application",
+          "highlights": [
+            "Developed a car rental e-commerce web application with vehicle listing, booking, and payment flows",
+            "Integrated PayPal payment gateway for online transactions",
+            "Built frontend architecture and implemented application state management"
           ]
         }
       ]
     },
     {
-      "company": "Freelance & Client Projects",
-      "role": "Front-end Developer",
-      "period": "Mar 2022 – Aug 2023",
+      "company": "Papagroup Technology",
+      "role": "Front-end Engineer",
+      "period": "Mar, 2022 – Aug, 2023",
       "projects": [
         {
-          "name": "Health Tech Platform",
+          "name": "PGO Web Event / Admin / Landing Page",
+          "teamSize": "24",
           "highlights": [
             "Developed admin interfaces and landing pages for a health technology platform",
             "Built responsive layouts and optimized UI performance",
@@ -166,39 +150,79 @@
           ]
         },
         {
-          "name": "Game Publisher Admin Panel",
+          "name": "Game Configuration Admin (Boom / Fish)",
+          "teamSize": "4",
           "highlights": [
             "Developed admin panels for game publishers to configure game settings",
             "Built UI components and managed frontend logic"
           ]
         },
         {
-          "name": "Game Configuration System",
+          "name": "PapaHub – Game Configuration Platform",
+          "teamSize": "18",
           "highlights": [
             "Developed frontend modules for a game configuration system that generates games based on templates",
             "Built configuration interfaces for game setup and customization",
             "Implemented API integration and optimized UI performance"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "company": "Est Rouge",
+      "role": "Front-end Engineer",
+      "period": "Aug, 2023 – Sep, 2024",
+      "projects": [
         {
-          "name": "Car Rental E-commerce",
+          "name": "SST – Ticket Sales Integration Platform (Product)",
+          "teamSize": "12",
           "highlights": [
-            "Developed a car rental e-commerce app with listing, booking, and PayPal payment integration",
-            "Built frontend architecture and state management"
+            "Developed frontend features for a ticket sales system integrated into promoters' official websites",
+            "Implemented user interfaces for ticket purchasing and management",
+            "Built reusable components and integrated backend APIs"
           ]
         },
         {
-          "name": "Smartphone E-commerce",
+          "name": "Aither – Custom Design Product Website",
+          "customer": "Aither",
+          "teamSize": "6",
           "highlights": [
-            "Developed an e-commerce web app for browsing and purchasing smartphones online",
-            "Built product listing, detail pages, and shopping cart with Redux Saga"
+            "Developed features for a product customization website allowing users to modify product design fields",
+            "Implemented UI interactions and maintained website functionality",
+            "Fixed issues and improved system usability"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "FPT IS",
+      "role": "Front-end Engineer",
+      "period": "Oct, 2024 – Present",
+      "projects": [
+        {
+          "name": "Procuva – E-commerce Web Application",
+          "customer": "MSB Bank",
+          "teamSize": "44",
+          "highlights": [
+            "Developed frontend modules for an enterprise e-commerce platform including admin dashboard and vendor portal functionalities",
+            "Built responsive and reusable UI components using ReactJS to support product management, vendor product listings, and customer-facing features",
+            "Implemented vendor portal features allowing suppliers to submit product offers, participate in bidding processes, and manage their product information",
+            "Implemented digital signature functionality to support secure document approval within business workflows",
+            "Developed admin dashboard features for workflow management, role-based access control (RBAC), and system configuration",
+            "Integrated backend APIs and handled frontend data flow to ensure seamless communication between services",
+            "Collaborated with backend and QA teams to resolve issues and maintain system stability and performance"
           ]
         },
         {
-          "name": "Intern Management System",
+          "name": "DTTG – Government Digitalization System",
+          "customer": "Ministry of Culture",
+          "teamSize": "30",
           "highlights": [
-            "Developed a web application to help universities and companies manage intern information",
-            "Participated in system research, design, and development"
+            "Developed and maintained frontend modules for a government digitalization system managing ethnic and religious population data in Vietnam",
+            "Built reusable UI components using ReactJS",
+            "Integrated frontend with backend APIs and handled application data flow using React state management",
+            "Collaborated with backend and QA teams to ensure system stability and performance",
+            "Investigated and fixed issues to improve system reliability"
           ]
         }
       ]

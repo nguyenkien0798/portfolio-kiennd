@@ -21,17 +21,17 @@ export default function LanguageSwitcher() {
 
   return (
     <div
-      className="ml-auto flex items-center gap-1 font-mono text-xs lg:ml-0"
+      className="flex items-center gap-0.5 font-mono text-xs"
       role="group"
       aria-label="Language switcher"
     >
       {routing.locales.map((loc, index) => (
         <span key={loc} className="flex items-center">
-          {index > 0 && <span className="mx-1 text-border">/</span>}
+          {index > 0 && <span className="mx-0.5 text-border">/</span>}
           <button
             type="button"
             onClick={() => switchLocale(loc)}
-            className={`transition-colors ${
+            className={`inline-flex min-h-9 min-w-9 items-center justify-center rounded-sm px-1.5 transition-colors ${
               locale === loc
                 ? "text-accent"
                 : "text-muted hover:text-accent"

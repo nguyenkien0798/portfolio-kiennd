@@ -28,19 +28,23 @@ export const skills = [
 
 /** Tech stack per company → per project */
 export const experienceTech: string[][][] = [
-  [["ReactJS", "RxJS", "RESTful API"]],
-  [["ReactJS", "React Query"]],
   [
-    ["NextJS", "React Query", "CMS"],
-    ["WordPress", "ACF"],
+    ["C#", "JavaScript"],
+    ["NextJS", "Redux Saga"],
+    ["NextJS", "Redux Saga"],
   ],
   [
     ["NextJS", "GraphQL", "React Query"],
     ["ReactJS", "React Query"],
     ["ReactJS", "Redux Saga", "Axios", "Material UI"],
-    ["NextJS", "Redux Saga"],
-    ["NextJS", "Redux Saga"],
-    ["C#", "JavaScript"],
+  ],
+  [
+    ["NextJS", "React Query", "CMS"],
+    ["WordPress", "ACF"],
+  ],
+  [
+    ["ReactJS", "RxJS"],
+    ["ReactJS", "React Query"],
   ],
 ];
 

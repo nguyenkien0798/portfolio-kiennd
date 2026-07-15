@@ -16,8 +16,6 @@
     overscroll-behavior: contain;
     padding: clamp(3rem, 8vh, 6rem) clamp(1.5rem, 4vw, 3rem)
       clamp(1.5rem, 4vh, 2.5rem) clamp(2rem, 5vw, 5rem);
-    scrollbar-width: thin;
-    scrollbar-color: var(--border) transparent;
   }
 
   .inner {
@@ -79,6 +77,12 @@
 
 .personalInfo li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
+  min-width: 0;
+}
+
+.personalInfo li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }

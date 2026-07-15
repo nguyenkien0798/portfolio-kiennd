@@ -6,6 +6,8 @@ import sectionStyles from "@/components/SectionTitle/Section.module.scss";
 
 type Project = {
   name: string;
+  customer?: string;
+  teamSize?: string;
   highlights: string[];
 };
 
@@ -18,6 +20,7 @@ type ExperienceItem = {
 
 export default function Experience() {
   const t = useTranslations("nav");
+  const tExp = useTranslations("experience");
   const tRoot = useTranslations();
   const experiences = tRoot.raw("experiences") as ExperienceItem[];
 
@@ -26,76 +29,68 @@ export default function Experience() {
       <SectionTitle title={t("experience")} />
 
       <div className={styles.list}>
-        {experiences.map((exp, companyIndex) => {
-          const highlights = exp.projects.flatMap((project) => project.highlights);
-          const techStack = [
-            ...new Set(
-              exp.projects.flatMap(
-                (_, projectIndex) =>
-                  experienceTech[companyIndex]?.[projectIndex] ?? []
-              )
-            ),
-          ];
-
-          return (
-            <article
-              key={`${exp.company}-${companyIndex}`}
-              className={styles.row}
-            >
-              <div className={styles.date}>{exp.period}</div>
-
-              <div>
-                <h3 className={styles.title}>
-                  <span>{exp.role}</span>
-                  <span className="text-muted"> · </span>
-                  <span>{exp.company}</span>
-                </h3>
-
-                {exp.projects.length > 1 ? (
-                  <div className="space-y-6">
-                    {exp.projects.map((project, projectIndex) => (
-                      <div key={project.name}>
-                        <h4 className="mb-2 text-sm font-medium text-foreground">
-                          {project.name}
-                        </h4>
-                        <p className={styles.description}>
-                          {project.highlights.join(" ")}
-                        </p>
-                        {(experienceTech[companyIndex]?.[projectIndex] ?? [])
-                          .length > 0 && (
-                          <ul className={styles.techList}>
-                            {(
-                              experienceTech[companyIndex]?.[projectIndex] ?? []
-                            ).map((tech) => (
-                              <li key={tech} className={styles.tag}>
-                                {tech}
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <>
-                    <p className={styles.description}>
-                      {highlights.join(" ")}
-                    </p>
-                    {techStack.length > 0 && (
-                      <ul className={styles.techList}>
-                        {techStack.map((tech) => (
-                          <li key={tech} className={styles.tag}>
-                            {tech}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
-                )}
+        {experiences.map((exp, companyIndex) => (
+          <article
+            key={`${exp.company}-${companyIndex}`}
+            className={styles.company}
+          >
+            <header className={styles.companyHeader}>
+              <div className={styles.companyMeta}>
+                <h3 className={styles.companyName}>{exp.company}</h3>
+                {exp.period ? (
+                  <span className={styles.period}>{exp.period}</span>
+                ) : null}
               </div>
-            </article>
-          );
-        })}
+              <p className={styles.role}>{exp.role}</p>
+            </header>
+
+            <div className={styles.projects}>
+              {exp.projects.map((project, projectIndex) => {
+                const tech =
+                  experienceTech[companyIndex]?.[projectIndex] ?? [];
+
+                return (
+                  <div key={project.name} className={styles.project}>
+                    <h4 className={styles.projectName}>{project.name}</h4>
+
+                    {project.customer ? (
+                      <p className={styles.meta}>
+                        <span className={styles.metaLabel}>
+                          {tExp("customer")}:
+                        </span>{" "}
+                        {project.customer}
+                      </p>
+                    ) : null}
+
+                    {project.teamSize ? (
+                      <p className={styles.meta}>
+                        <span className={styles.metaLabel}>
+                          {tExp("teamSize")}:
+                        </span>{" "}
+                        {project.teamSize}
+                      </p>
+                    ) : null}
+
+                    <ul className={styles.highlights}>
+                      {project.highlights.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+
+                    {tech.length > 0 ? (
+                      <p className={styles.technologies}>
+                        <span className={styles.metaLabel}>
+                          {tExp("technologies")}:
+                        </span>{" "}
+                        {tech.join(", ")}
+                      </p>
+                    ) : null}
+                  </div>
+                );
+              })}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );

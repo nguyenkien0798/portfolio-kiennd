@@ -9,7 +9,10 @@ export default function About() {
   const tPersonal = useTranslations("personal");
 
   return (
-    <section id="about" className={sectionStyles.block}>
+    <section
+      id="about"
+      className={`${sectionStyles.block} ${sectionStyles.blockFirst}`}
+    >
       <SectionTitle title={t("about")} />
 
       <div className={`space-y-4 ${aboutStyles.prose}`}>

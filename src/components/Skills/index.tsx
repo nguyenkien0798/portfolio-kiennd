@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { skills } from "@/data/portfolio";
 import { SectionTitle } from "@/components/SectionTitle";
-import experienceStyles from "@/components/Experience/Experience.module.scss";
+import styles from "./Skills.module.scss";
 import sectionStyles from "@/components/SectionTitle/Section.module.scss";
 
 export default function Skills() {
@@ -18,15 +18,15 @@ export default function Skills() {
     <section id="skills" className={sectionStyles.block}>
       <SectionTitle title={t("skills")} />
 
-      <div className="space-y-8">
+      <div className={styles.groups}>
         {Object.entries(grouped).map(([category, items]) => (
           <div key={category}>
-            <h3 className="mb-3 font-mono text-xs uppercase tracking-widest text-muted">
+            <h3 className={styles.category}>
               {tSkills(`categories.${category}`)}
             </h3>
-            <ul className={experienceStyles.techList}>
+            <ul className={styles.list}>
               {items.map((skill) => (
-                <li key={skill.name} className={experienceStyles.tag}>
+                <li key={skill.name} className={styles.tag}>
                   {skill.name}
                 </li>
               ))}

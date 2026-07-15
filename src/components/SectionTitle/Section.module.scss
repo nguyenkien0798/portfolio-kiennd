@@ -12,8 +12,14 @@
   }
 }
 
-.block:first-of-type {
+.blockFirst {
   padding-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .blockFirst {
+    padding-top: 0;
+  }
 }
 
 .heading {
