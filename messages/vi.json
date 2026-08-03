@@ -5,46 +5,98 @@
     "keywords": "Front-end Engineer, ReactJS, NextJS, Kiên Nguyễn Đình, Portfolio, Đà Nẵng"
   },
   "nav": {
+    "home": "home",
+    "projects": "projects",
+    "experience": "experience",
+    "contact": "contact",
+    "contactCta": "Liên hệ",
+    "brand": "SOFTWARE ENGINEER",
     "about": "Giới thiệu",
     "education": "Học vấn",
-    "skills": "Kỹ năng",
-    "experience": "Kinh nghiệm",
-    "contact": "Liên hệ",
-    "contactCta": "Liên hệ"
+    "skills": "Kỹ năng"
   },
   "hero": {
     "greeting": "Xin chào, tôi là",
-    "viewExperience": "Xem kinh nghiệm"
+    "role": "FRONT-END ENGINEER",
+    "roleAlt1": "REACT DEVELOPER",
+    "roleAlt2": "NEXT.JS SPECIALIST",
+    "displayName": "KIEN NGUYEN DINH",
+    "lead": "Phát triển <highlight>Frontend</highlight> với sự tập trung và đam mê tạo ra các giải pháp mạnh mẽ, sáng tạo. Kinh nghiệm của tôi bao gồm kỹ thuật <highlight>front-end</highlight> với React và Next.js, giúp xây dựng giao diện hoàn chỉnh và tinh tế. Tôi luôn tìm kiếm thử thách mới để học và áp dụng công nghệ mới nhất, đảm bảo sản phẩm hiệu năng cao, bền vững và mở rộng được.",
+    "viewExperience": "Xem dự án",
+    "contactMe": "Contact me",
+    "downloadCv": "Download CV",
+    "techStack": "Tech Stack:",
+    "moreTech": "+{count} more +",
+    "codeTitle": "developer.ts",
+    "codeLoading": "Loading code block..."
   },
-  "about": {
-    "title": "Giới thiệu",
-    "subtitle": "Về tôi",
-    "currently": "Hiện tại, tôi là",
-    "currentlyAt": "tại",
-    "currentlySuffix": "",
-    "passion": "Tôi đam mê xây dựng giao diện đẹp, dễ tiếp cận và viết code sạch, dễ bảo trì.",
-    "yearsLabel": "năm kinh nghiệm phát triển frontend",
-    "strengths": "Điểm mạnh"
+  "projects": {
+    "title": "Dự án nổi bật",
+    "subtitle": "Mỗi dự án tập trung vào hiệu năng, giao diện sạch và trải nghiệm người dùng trên stack web hiện đại.",
+    "frontEnd": "Chuyên môn Front-End",
+    "frontEndDesc": "Giao diện với React, Next.js và tương tác được thiết kế kỹ",
+    "delivery": "Giao hàng tin cậy",
+    "deliveryDesc": "Sản phẩm enterprise với API, state management và UI mở rộng được"
   },
-  "skills": {
-    "title": "Kỹ năng",
-    "subtitle": "Tech Stack",
-    "categories": {
-      "framework": "Framework",
-      "language": "Ngôn ngữ",
-      "state": "State Management",
-      "api": "API",
-      "tool": "Công cụ",
-      "practice": "Thực hành"
+  "expertise": {
+    "title": "Frontend Expertise",
+    "subtitle": "Giao diện hiện đại, responsive, chú trọng độ rõ ràng, hiệu năng và kiến trúc dễ bảo trì.",
+    "impactTitle": "Trải nghiệm thị giác có tác động",
+    "impactDesc": "Tôi tập trung vào giao diện ổn định và tinh tế — layout responsive, tương tác mượt và hiệu năng cao.",
+    "codeTitle": "Component.tsx",
+    "items": {
+      "uiux": {
+        "title": "UI/UX Design",
+        "desc": "Giao diện sạch, dễ dùng, tiếp cận tốt và phân cấp thị giác rõ ràng."
+      },
+      "react": {
+        "title": "React & Next.js",
+        "desc": "Ứng dụng React và Next.js theo pattern và best practice hiện đại."
+      },
+      "state": {
+        "title": "State Management",
+        "desc": "Redux Saga, RxJS và React Query cho luồng dữ liệu ổn định, mở rộng được."
+      },
+      "api": {
+        "title": "API Integration",
+        "desc": "Tích hợp RESTful và GraphQL với xử lý data frontend vững chắc."
+      },
+      "responsive": {
+        "title": "Responsive Design",
+        "desc": "Layout thích ứng tốt trên mọi thiết bị, trải nghiệm nhất quán."
+      },
+      "performance": {
+        "title": "Performance",
+        "desc": "Tối ưu tải trang, render và tương tác cho UI nhanh."
+      }
+    },
+    "highlights": {
+      "interactive": "Giao diện tương tác và responsive",
+      "animations": "Motion tinh tế và micro-interactions",
+      "architecture": "Kiến trúc component mở rộng được",
+      "pwa": "Hệ thống UI tái sử dụng, dễ bảo trì",
+      "seo": "Cấu trúc chú trọng accessibility và SEO"
     }
   },
   "experience": {
     "title": "Kinh nghiệm",
-    "subtitle": "Career",
+    "subtitle": "Các vai trò và sản phẩm tôi đã triển khai tại startup và doanh nghiệp.",
     "projects": "Dự án",
     "customer": "Khách hàng",
     "teamSize": "Quy mô team",
     "technologies": "Công nghệ"
+  },
+  "educationSection": {
+    "title": "Học vấn",
+    "subtitle": "Nền tảng học thuật và đào tạo chuyên sâu frontend."
+  },
+  "github": {
+    "title": "Github Activity",
+    "subtitle": "Xem đóng góp open source và các repository cá nhân.",
+    "viewProfile": "Xem profile Github",
+    "repos": "Repositories",
+    "focus": "Tập trung Frontend",
+    "stack": "React · Next.js · TypeScript"
   },
   "contact": {
     "title": "Liên hệ",

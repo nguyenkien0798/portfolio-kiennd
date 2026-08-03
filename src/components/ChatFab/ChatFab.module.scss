@@ -1,0 +1,58 @@
+.fab {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--background);
+  box-shadow: 0 10px 28px rgba(122, 144, 255, 0.45);
+  transition:
+    transform 0.25s var(--easing),
+    box-shadow 0.25s var(--easing),
+    background-color 0.25s var(--easing);
+}
+
+.fab:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: var(--accent-hover);
+  box-shadow: 0 14px 32px rgba(122, 144, 255, 0.55);
+}
+
+.pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--accent);
+  animation: fabPulse 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes fabPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .fab {
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}

@@ -11,21 +11,22 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        accent: {
-          DEFAULT: "var(--accent)",
-          hover: "var(--accent-hover)",
-        },
+        accent: "var(--accent)",
+        "accent-hover": "var(--accent-hover)",
         muted: "var(--muted)",
+        "light-slate": "var(--light-slate)",
         card: "var(--card)",
+        "card-hover": "var(--card-hover)",
         border: "var(--border)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
       animation: {
-        "fade-in": "fadeIn 0.6s ease-out forwards",
-        "slide-up": "slideUp 0.6s ease-out forwards",
+        "fade-in": "fadeIn 0.6s var(--easing) forwards",
+        "slide-up": "slideUp 0.7s var(--easing) forwards",
       },
       keyframes: {
         fadeIn: {
@@ -33,7 +34,7 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
         slideUp: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "0%": { opacity: "0", transform: "translateY(24px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },

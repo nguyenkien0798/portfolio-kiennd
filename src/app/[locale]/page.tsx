@@ -1,16 +1,15 @@
 import { setRequestLocale } from "next-intl/server";
-import Sidebar from "@/components/Sidebar";
-import MobileNav from "@/components/MobileNav";
-import MobileIntro from "@/components/MobileIntro";
-import About from "@/components/About";
-import Education from "@/components/Education";
-import Skills from "@/components/Skills";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Expertise from "@/components/Expertise";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import GithubActivity from "@/components/GithubActivity";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import MouseGlow from "@/components/MouseGlow";
-import { MainScroll } from "@/components/ScrollLayout";
-import layoutStyles from "@/components/ScrollLayout/ScrollLayout.module.scss";
+import ChatFab from "@/components/ChatFab";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -23,28 +22,30 @@ export default async function Home({ params }: Props) {
 
   return (
     <>
-      <MouseGlow />
-      <MobileNav />
-
-      <div className={layoutStyles.shell}>
-        <Sidebar />
-        <MainScroll>
-          <MobileIntro />
-          <Reveal>
-            <About />
-          </Reveal>
-          <Reveal>
-            <Education />
-          </Reveal>
-          <Reveal>
-            <Experience />
-          </Reveal>
-          <Reveal>
-            <Skills />
-          </Reveal>
-          <Footer />
-        </MainScroll>
-      </div>
+      <Header />
+      <main>
+        <Hero />
+        <Reveal>
+          <Projects />
+        </Reveal>
+        <Reveal>
+          <Expertise />
+        </Reveal>
+        <Reveal>
+          <Experience />
+        </Reveal>
+        <Reveal>
+          <Education />
+        </Reveal>
+        <Reveal>
+          <GithubActivity />
+        </Reveal>
+        <Reveal>
+          <Contact />
+        </Reveal>
+      </main>
+      <Footer />
+      <ChatFab />
     </>
   );
 }

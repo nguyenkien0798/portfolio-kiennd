@@ -21,26 +21,24 @@ export default function LanguageSwitcher() {
 
   return (
     <div
-      className="flex items-center gap-0.5 font-mono text-xs"
+      className="flex items-center gap-1 rounded-full border border-border bg-card/60 p-1 font-mono text-xs"
       role="group"
       aria-label="Language switcher"
     >
-      {routing.locales.map((loc, index) => (
-        <span key={loc} className="flex items-center">
-          {index > 0 && <span className="mx-0.5 text-border">/</span>}
-          <button
-            type="button"
-            onClick={() => switchLocale(loc)}
-            className={`inline-flex min-h-9 min-w-9 items-center justify-center rounded-sm px-1.5 transition-colors ${
-              locale === loc
-                ? "text-accent"
-                : "text-muted hover:text-accent"
-            }`}
-            aria-pressed={locale === loc}
-          >
-            {localeLabels[loc]}
-          </button>
-        </span>
+      {routing.locales.map((loc) => (
+        <button
+          key={loc}
+          type="button"
+          onClick={() => switchLocale(loc)}
+          className={`inline-flex min-h-8 min-w-8 items-center justify-center rounded-full px-2.5 transition-all ${
+            locale === loc
+              ? "bg-accent text-background shadow-[0_0_12px_rgba(122,144,255,0.35)]"
+              : "text-muted hover:bg-white/5 hover:text-accent"
+          }`}
+          aria-pressed={locale === loc}
+        >
+          {localeLabels[loc]}
+        </button>
       ))}
     </div>
   );

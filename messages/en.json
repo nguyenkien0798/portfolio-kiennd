@@ -5,46 +5,98 @@
     "keywords": "Front-end Engineer, ReactJS, NextJS, Kien Nguyen Dinh, Portfolio, Da Nang"
   },
   "nav": {
+    "home": "home",
+    "projects": "projects",
+    "experience": "experience",
+    "contact": "contact",
+    "contactCta": "Contact me",
+    "brand": "SOFTWARE ENGINEER",
     "about": "About",
     "education": "Education",
-    "skills": "Skills",
-    "experience": "Experience",
-    "contact": "Contact",
-    "contactCta": "Contact"
+    "skills": "Skills"
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "viewExperience": "View experience"
+    "role": "FRONT-END ENGINEER",
+    "roleAlt1": "REACT DEVELOPER",
+    "roleAlt2": "NEXT.JS SPECIALIST",
+    "displayName": "KIEN NGUYEN DINH",
+    "lead": "<highlight>Frontend</highlight> development with a pronounced focus and enthusiasm for creating powerful and innovative solutions. My experience covers <highlight>front-end</highlight> engineering with React and Next.js, allowing me to build complete, polished interfaces. I am constantly looking for new challenges that allow me to learn and apply the latest technologies, ensuring the delivery of robust, scalable, and high-performance products.",
+    "viewExperience": "View projects",
+    "contactMe": "Contact me",
+    "downloadCv": "Download CV",
+    "techStack": "Tech Stack:",
+    "moreTech": "+{count} more +",
+    "codeTitle": "developer.ts",
+    "codeLoading": "Loading code block..."
   },
-  "about": {
-    "title": "About",
-    "subtitle": "About me",
-    "currently": "Currently, I'm a",
-    "currentlyAt": "based in",
-    "currentlySuffix": "",
-    "passion": "I'm passionate about crafting accessible, pixel-perfect user interfaces and writing clean, maintainable code that scales.",
-    "yearsLabel": "years of frontend development experience",
-    "strengths": "Strengths"
+  "projects": {
+    "title": "Latest Projects",
+    "subtitle": "Each project reflects a focus on performance, clean interfaces, and a strong user experience across modern web stacks.",
+    "frontEnd": "Front-End Expertise",
+    "frontEndDesc": "Interfaces with React, Next.js and thoughtful interaction design",
+    "delivery": "Reliable Delivery",
+    "deliveryDesc": "Enterprise and product work with APIs, state management, and scalable UI"
   },
-  "skills": {
-    "title": "Skills",
-    "subtitle": "Tech Stack",
-    "categories": {
-      "framework": "Framework",
-      "language": "Language",
-      "state": "State Management",
-      "api": "API",
-      "tool": "Tools",
-      "practice": "Practices"
+  "expertise": {
+    "title": "Frontend Expertise",
+    "subtitle": "Modern, responsive interfaces focused on clarity, performance, and maintainable architecture.",
+    "impactTitle": "Impactful Visual Experience",
+    "impactDesc": "I focus on interfaces that work reliably and feel polished — responsive layouts, smooth interactions, and high performance.",
+    "codeTitle": "Component.tsx",
+    "items": {
+      "uiux": {
+        "title": "UI/UX Design",
+        "desc": "Clean interfaces focused on usability, accessibility, and clear visual hierarchy."
+      },
+      "react": {
+        "title": "React & Next.js",
+        "desc": "Applications with React and Next.js using modern patterns and best practices."
+      },
+      "state": {
+        "title": "State Management",
+        "desc": "Redux Saga, RxJS, and React Query for predictable, scalable data flows."
+      },
+      "api": {
+        "title": "API Integration",
+        "desc": "RESTful and GraphQL integrations with solid frontend data handling."
+      },
+      "responsive": {
+        "title": "Responsive Design",
+        "desc": "Layouts that adapt cleanly across devices with consistent experience."
+      },
+      "performance": {
+        "title": "Performance",
+        "desc": "Optimization of loading, rendering, and interactivity for fast UIs."
+      }
+    },
+    "highlights": {
+      "interactive": "Interactive and responsive interfaces",
+      "animations": "Subtle motion and micro-interactions",
+      "architecture": "Scalable component architecture",
+      "pwa": "Maintainable, reusable UI systems",
+      "seo": "Accessibility and SEO-minded structure"
     }
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "Career",
+    "subtitle": "Roles and products I've shipped across startups and enterprise teams.",
     "projects": "Projects",
     "customer": "Customer",
     "teamSize": "Team size",
     "technologies": "Technologies"
+  },
+  "educationSection": {
+    "title": "Education",
+    "subtitle": "Academic background and specialized frontend training."
+  },
+  "github": {
+    "title": "Github Activity",
+    "subtitle": "Explore my open source contributions and personal repositories.",
+    "viewProfile": "See the Github profile",
+    "repos": "Repositories",
+    "focus": "Frontend focus",
+    "stack": "React · Next.js · TypeScript"
   },
   "contact": {
     "title": "Contact",
