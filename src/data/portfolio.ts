@@ -48,6 +48,22 @@ export const experienceTech: string[][][] = [
   ],
 ];
 
+/** Illustration paths per company → per project */
+export const experienceImages: string[][] = [
+  [
+    "/images/projects/intern_management.png",
+    "/images/projects/phone_store.png",
+    "/images/projects/car-rent.png",
+  ],
+  [
+    "/images/projects/pgo.png",
+    "/images/projects/game-config-admin.png",
+    "/images/projects/papahub.png",
+  ],
+  ["/images/projects/sst.png", "/images/projects/aither.png"],
+  ["/images/projects/procuva.png", "/images/projects/dttg.png"],
+];
+
 export const navAnchors = [
   { href: "#about", key: "about" as const, number: "01" },
   { href: "#education", key: "education" as const, number: "02" },

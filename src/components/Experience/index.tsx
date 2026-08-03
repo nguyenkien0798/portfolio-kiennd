@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { experienceTech } from "@/data/portfolio";
+import { experienceImages, experienceTech } from "@/data/portfolio";
 import { SectionTitle } from "@/components/SectionTitle";
 import styles from "./Experience.module.scss";
 import sectionStyles from "@/components/SectionTitle/Section.module.scss";
@@ -48,43 +49,59 @@ export default function Experience() {
               {exp.projects.map((project, projectIndex) => {
                 const tech =
                   experienceTech[companyIndex]?.[projectIndex] ?? [];
+                const image =
+                  experienceImages[companyIndex]?.[projectIndex];
 
                 return (
                   <div key={project.name} className={styles.project}>
-                    <h4 className={styles.projectName}>{project.name}</h4>
-
-                    {project.customer ? (
-                      <p className={styles.meta}>
-                        <span className={styles.metaLabel}>
-                          {tExp("customer")}:
-                        </span>{" "}
-                        {project.customer}
-                      </p>
+                    {image ? (
+                      <div className={styles.projectImage}>
+                        <Image
+                          src={image}
+                          alt={project.name}
+                          width={640}
+                          height={400}
+                          className={styles.thumbnail}
+                        />
+                      </div>
                     ) : null}
 
-                    {project.teamSize ? (
-                      <p className={styles.meta}>
-                        <span className={styles.metaLabel}>
-                          {tExp("teamSize")}:
-                        </span>{" "}
-                        {project.teamSize}
-                      </p>
-                    ) : null}
+                    <div className={styles.projectBody}>
+                      <h4 className={styles.projectName}>{project.name}</h4>
 
-                    <ul className={styles.highlights}>
-                      {project.highlights.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
+                      {project.customer ? (
+                        <p className={styles.meta}>
+                          <span className={styles.metaLabel}>
+                            {tExp("customer")}:
+                          </span>{" "}
+                          {project.customer}
+                        </p>
+                      ) : null}
 
-                    {tech.length > 0 ? (
-                      <p className={styles.technologies}>
-                        <span className={styles.metaLabel}>
-                          {tExp("technologies")}:
-                        </span>{" "}
-                        {tech.join(", ")}
-                      </p>
-                    ) : null}
+                      {project.teamSize ? (
+                        <p className={styles.meta}>
+                          <span className={styles.metaLabel}>
+                            {tExp("teamSize")}:
+                          </span>{" "}
+                          {project.teamSize}
+                        </p>
+                      ) : null}
+
+                      <ul className={styles.highlights}>
+                        {project.highlights.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+
+                      {tech.length > 0 ? (
+                        <p className={styles.technologies}>
+                          <span className={styles.metaLabel}>
+                            {tExp("technologies")}:
+                          </span>{" "}
+                          {tech.join(", ")}
+                        </p>
+                      ) : null}
+                    </div>
                   </div>
                 );
               })}
