@@ -164,7 +164,7 @@ const developer = {
                   type="button"
                   onClick={() => setExpanded(false)}
                   className={styles.iconBtn}
-                  aria-label="Collapse tech stack"
+                  aria-label={t("collapseTech")}
                 >
                   <X size={14} />
                 </button>

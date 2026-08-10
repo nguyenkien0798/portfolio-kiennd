@@ -5,10 +5,10 @@
     "keywords": "Front-end Engineer, ReactJS, NextJS, Kiên Nguyễn Đình, Portfolio, Đà Nẵng"
   },
   "nav": {
-    "home": "home",
-    "projects": "projects",
-    "experience": "experience",
-    "contact": "contact",
+    "home": "trang chủ",
+    "projects": "dự án",
+    "experience": "kinh nghiệm",
+    "contact": "liên hệ",
     "contactCta": "Liên hệ",
     "brand": "SOFTWARE ENGINEER",
     "about": "Giới thiệu",
@@ -23,30 +23,31 @@
     "displayName": "KIEN NGUYEN DINH",
     "lead": "Phát triển <highlight>Frontend</highlight> với sự tập trung và đam mê tạo ra các giải pháp mạnh mẽ, sáng tạo. Kinh nghiệm của tôi bao gồm kỹ thuật <highlight>front-end</highlight> với React và Next.js, giúp xây dựng giao diện hoàn chỉnh và tinh tế. Tôi luôn tìm kiếm thử thách mới để học và áp dụng công nghệ mới nhất, đảm bảo sản phẩm hiệu năng cao, bền vững và mở rộng được.",
     "viewExperience": "Xem dự án",
-    "contactMe": "Contact me",
-    "downloadCv": "Download CV",
-    "techStack": "Tech Stack:",
-    "moreTech": "+{count} more +",
+    "contactMe": "Liên hệ",
+    "downloadCv": "Tải CV",
+    "techStack": "Công nghệ",
+    "moreTech": "Xem thêm {count}",
     "codeTitle": "developer.ts",
-    "codeLoading": "Loading code block..."
+    "codeLoading": "Đang tải code...",
+    "collapseTech": "Thu gọn công nghệ"
   },
   "projects": {
     "title": "Dự án nổi bật",
     "subtitle": "Mỗi dự án tập trung vào hiệu năng, giao diện sạch và trải nghiệm người dùng trên stack web hiện đại.",
     "frontEnd": "Chuyên môn Front-End",
     "frontEndDesc": "Giao diện với React, Next.js và tương tác được thiết kế kỹ",
-    "delivery": "Giao hàng tin cậy",
-    "deliveryDesc": "Sản phẩm enterprise với API, state management và UI mở rộng được"
+    "delivery": "Triển khai tin cậy",
+    "deliveryDesc": "Sản phẩm doanh nghiệp với API, state management và UI mở rộng được"
   },
   "expertise": {
-    "title": "Frontend Expertise",
+    "title": "Chuyên môn Frontend",
     "subtitle": "Giao diện hiện đại, responsive, chú trọng độ rõ ràng, hiệu năng và kiến trúc dễ bảo trì.",
     "impactTitle": "Trải nghiệm thị giác có tác động",
     "impactDesc": "Tôi tập trung vào giao diện ổn định và tinh tế — layout responsive, tương tác mượt và hiệu năng cao.",
     "codeTitle": "Component.tsx",
     "items": {
       "uiux": {
-        "title": "UI/UX Design",
+        "title": "Thiết kế UI/UX",
         "desc": "Giao diện sạch, dễ dùng, tiếp cận tốt và phân cấp thị giác rõ ràng."
       },
       "react": {
@@ -54,19 +55,19 @@
         "desc": "Ứng dụng React và Next.js theo pattern và best practice hiện đại."
       },
       "state": {
-        "title": "State Management",
+        "title": "Quản lý State",
         "desc": "Redux Saga, RxJS và React Query cho luồng dữ liệu ổn định, mở rộng được."
       },
       "api": {
-        "title": "API Integration",
+        "title": "Tích hợp API",
         "desc": "Tích hợp RESTful và GraphQL với xử lý data frontend vững chắc."
       },
       "responsive": {
-        "title": "Responsive Design",
+        "title": "Thiết kế Responsive",
         "desc": "Layout thích ứng tốt trên mọi thiết bị, trải nghiệm nhất quán."
       },
       "performance": {
-        "title": "Performance",
+        "title": "Hiệu năng",
         "desc": "Tối ưu tải trang, render và tương tác cho UI nhanh."
       }
     },
@@ -91,16 +92,16 @@
     "subtitle": "Nền tảng học thuật và đào tạo chuyên sâu frontend."
   },
   "github": {
-    "title": "Github Activity",
+    "title": "Hoạt động Github",
     "subtitle": "Xem đóng góp open source và các repository cá nhân.",
-    "viewProfile": "Xem profile Github",
+    "viewProfile": "Xem hồ sơ Github",
     "repos": "Repositories",
     "focus": "Tập trung Frontend",
     "stack": "React · Next.js · TypeScript"
   },
   "contact": {
     "title": "Liên hệ",
-    "subtitle": "Get in touch",
+    "subtitle": "Kết nối với tôi",
     "description": "Tôi đang mở cho các cơ hội mới. Dù bạn có câu hỏi hay chỉ muốn chào hỏi, tôi sẽ cố gắng phản hồi sớm nhất!",
     "sayHello": "Gửi lời chào",
     "phone": "Điện thoại",
@@ -115,7 +116,7 @@
     "sendEmail": "Gửi email"
   },
   "footer": {
-    "rights": "All rights reserved.",
+    "rights": "Đã đăng ký bản quyền.",
     "builtBy": "Thiết kế & xây dựng bởi",
     "builtWith": "Xây dựng với Next.js & Tailwind CSS"
   },
@@ -126,21 +127,21 @@
   },
   "personal": {
     "name": "Kiên Nguyễn Đình",
-    "title": "Front-end Engineer",
+    "title": "Kỹ sư Front-end",
     "tagline": "Xây dựng ứng dụng web hiệu năng cao, giao diện đẹp và dễ bảo trì",
-    "summary": "Frontend Engineer với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
+    "summary": "Kỹ sư Frontend với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
     "location": "Đà Nẵng, Việt Nam"
   },
   "education": [
     {
-      "school": "Duy Tân University",
-      "degree": "Bachelor of Software Engineering",
-      "period": "Oct, 2016 - Jan, 2021"
+      "school": "Đại học Duy Tân",
+      "degree": "Cử nhân Kỹ thuật phần mềm",
+      "period": "10/2016 - 01/2021"
     },
     {
-      "school": "Iviettech Center",
-      "degree": "Major: Front-end",
-      "period": "Aug, 2022 - Jan, 2023"
+      "school": "Trung tâm Iviettech",
+      "degree": "Chuyên ngành: Front-end",
+      "period": "08/2022 - 01/2023"
     }
   ],
   "softSkills": [
@@ -157,8 +158,8 @@
   ],
   "experiences": [
     {
-      "company": "Personal Projects",
-      "role": "Front-end Engineer",
+      "company": "Dự án cá nhân",
+      "role": "Kỹ sư Front-end",
       "period": "",
       "projects": [
         {
@@ -189,7 +190,7 @@
     },
     {
       "company": "Papagroup Technology",
-      "role": "Front-end Engineer",
+      "role": "Kỹ sư Front-end",
       "period": "03/2022 – 08/2023",
       "projects": [
         {
@@ -222,7 +223,7 @@
     },
     {
       "company": "Est Rouge",
-      "role": "Front-end Engineer",
+      "role": "Kỹ sư Front-end",
       "period": "08/2023 – 09/2024",
       "projects": [
         {
@@ -248,7 +249,7 @@
     },
     {
       "company": "FPT IS",
-      "role": "Front-end Engineer",
+      "role": "Kỹ sư Front-end",
       "period": "10/2024 – Hiện tại",
       "projects": [
         {

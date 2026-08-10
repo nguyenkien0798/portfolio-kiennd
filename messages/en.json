@@ -25,10 +25,11 @@
     "viewExperience": "View projects",
     "contactMe": "Contact me",
     "downloadCv": "Download CV",
-    "techStack": "Tech Stack:",
-    "moreTech": "+{count} more +",
+    "techStack": "Tech Stack",
+    "moreTech": "View more {count}",
     "codeTitle": "developer.ts",
-    "codeLoading": "Loading code block..."
+    "codeLoading": "Loading code block...",
+    "collapseTech": "Collapse tech stack"
   },
   "projects": {
     "title": "Latest Projects",
