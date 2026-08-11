@@ -12,7 +12,7 @@ export default function Footer() {
           © {year} {tPersonal("name")}. {t("rights")}
         </p>
         <p className="font-mono text-xs text-muted">
-          {t("builtBy")} {tPersonal("name")}. {t("builtWith")}
+          {t("builtBy")} {tPersonal("name")} · {t("builtWith")}
         </p>
       </div>
     </footer>

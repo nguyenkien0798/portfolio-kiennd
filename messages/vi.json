@@ -45,7 +45,7 @@
     "title": "Chuyên môn Frontend",
     "subtitle": "Giao diện hiện đại, responsive, chú trọng độ rõ ràng, hiệu năng và kiến trúc dễ bảo trì.",
     "impactTitle": "Trải nghiệm thị giác có tác động",
-    "impactDesc": "Tôi tập trung vào giao diện ổn định và tinh tế — layout responsive, tương tác mượt và hiệu năng cao.",
+    "impactDesc": "Tôi tập trung tạo giao diện không chỉ hoạt động tốt mà còn làm người dùng thích thú với animation mượt, thiết kế responsive và hiệu năng cao.",
     "codeTitle": "Component.tsx",
     "items": {
       "uiux": {
@@ -75,10 +75,10 @@
     },
     "highlights": {
       "interactive": "Giao diện tương tác và responsive",
-      "animations": "Motion tinh tế và micro-interactions",
+      "animations": "Animation nâng cao và micro-interactions",
       "architecture": "Kiến trúc component mở rộng được",
-      "pwa": "Hệ thống UI tái sử dụng, dễ bảo trì",
-      "seo": "Cấu trúc chú trọng accessibility và SEO"
+      "pwa": "Progressive Web Applications (PWA)",
+      "seo": "Tối ưu SEO và accessibility"
     }
   },
   "experience": {
@@ -89,7 +89,9 @@
     "teamSize": "Quy mô team",
     "technologies": "Công nghệ",
     "showMore": "Xem thêm",
-    "showLess": "Thu gọn"
+    "showLess": "Thu gọn",
+    "ongoing": "Hiện tại",
+    "now": "Now"
   },
   "educationSection": {
     "title": "Học vấn",
@@ -117,8 +119,8 @@
   },
   "footer": {
     "rights": "Đã đăng ký bản quyền.",
-    "builtBy": "Thiết kế & xây dựng bởi",
-    "builtWith": "Xây dựng với Next.js & Tailwind CSS"
+    "builtBy": "Thiết kế & phát triển bởi",
+    "builtWith": "Next.js · Tailwind CSS"
   },
   "language": {
     "en": "English",

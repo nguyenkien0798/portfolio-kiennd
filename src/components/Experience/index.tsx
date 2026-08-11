@@ -45,18 +45,18 @@ function ProjectHighlights({
 
   return (
     <div>
-      <ul className="mt-2 space-y-1.5">
+      <ul className={styles.highlightList}>
         <AnimatePresence initial={false}>
           {visible.map((item) => (
             <motion.li
               key={item}
-              className="flex gap-2 text-sm text-muted"
+              className={styles.highlightItem}
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25 }}
             >
-              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent/70" />
+              <span className={styles.highlightDot} aria-hidden />
               {item}
             </motion.li>
           ))}
@@ -90,11 +90,11 @@ export default function Experience() {
 
   const { scrollYProgress } = useScroll({
     target: trackRef,
-    offset: ["start 0.75", "end 0.35"],
+    offset: ["start 0.8", "end 0.35"],
   });
   const lineProgress = useSpring(scrollYProgress, {
-    stiffness: 80,
-    damping: 24,
+    stiffness: 90,
+    damping: 26,
   });
 
   return (
@@ -108,115 +108,107 @@ export default function Experience() {
           <div className={styles.line} aria-hidden>
             <motion.span
               className={styles.lineFill}
-              style={{
-                scaleY: reduceMotion ? 1 : lineProgress,
-              }}
+              style={{ scaleY: reduceMotion ? 1 : lineProgress }}
             />
           </div>
 
-          <div className="space-y-8">
-            {experiences.map((exp, companyIndex) => (
-              <motion.article
-                key={`${exp.company}-${companyIndex}`}
-                className={styles.item}
-                initial={
-                  reduceMotion
-                    ? false
-                    : { opacity: 0, y: 28 }
-                }
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.25 }}
-                transition={{
-                  duration: 0.65,
-                  delay: companyIndex * 0.05,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-              >
-                <motion.span
-                  className={styles.dot}
-                  initial={reduceMotion ? false : { scale: 0 }}
-                  whileInView={{ scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ type: "spring", stiffness: 320, damping: 18 }}
+          <ol className={styles.list}>
+            {experiences.map((exp, companyIndex) => {
+              const companyUrl = experienceCompanyUrls[companyIndex];
+              const periodLabel = exp.period || t("ongoing");
+
+              return (
+                <motion.li
+                  key={`${exp.company}-${companyIndex}`}
+                  className={styles.item}
+                  initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    duration: 0.55,
+                    delay: companyIndex * 0.04,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
                 >
-                  <span />
-                </motion.span>
-
-                <div className={`glass-card p-5 sm:p-6 ${styles.card}`}>
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    {experienceCompanyUrls[companyIndex] ? (
-                      <a
-                        href={experienceCompanyUrls[companyIndex]!}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.companyLink}
-                      >
-                        <h3 className="font-display text-xl font-semibold text-foreground">
-                          {exp.company}
-                        </h3>
-                        <ExternalLink size={14} aria-hidden />
-                      </a>
-                    ) : (
-                      <h3 className="font-display text-xl font-semibold text-foreground">
-                        {exp.company}
-                      </h3>
-                    )}
-                    {exp.period ? (
-                      <span className="font-mono text-xs text-muted">
-                        {exp.period}
-                      </span>
-                    ) : null}
+                  <div className={styles.periodCol}>
+                    <span className={styles.period}>{periodLabel}</span>
                   </div>
-                  <p className="mt-1 text-sm font-medium text-accent">
-                    {exp.role}
-                  </p>
 
-                  <ul className="mt-5 space-y-4">
-                    {exp.projects.map((project, projectIndex) => {
-                      const tech =
-                        experienceTech[companyIndex]?.[projectIndex] ?? [];
-                      return (
-                        <li
-                          key={project.name}
-                          className="border-t border-border/70 pt-4 first:border-0 first:pt-0"
-                        >
-                          <h4 className="text-sm font-semibold text-foreground">
-                            {project.name}
-                          </h4>
-                          <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
-                            {project.customer ? (
-                              <span>
-                                {t("customer")}: {project.customer}
-                              </span>
-                            ) : null}
-                            {project.teamSize ? (
-                              <span>
-                                {t("teamSize")}: {project.teamSize}
-                              </span>
-                            ) : null}
-                          </div>
-                          <ProjectHighlights
-                            highlights={project.highlights}
-                            showMoreLabel={t("showMore")}
-                            showLessLabel={t("showLess")}
-                          />
-                          {tech.length > 0 ? (
-                            <div className="mt-3 flex flex-wrap gap-1.5">
-                              {tech.map((item) => (
-                                <span key={item} className="tech-chip">
-                                  {item}
+                  <motion.span
+                    className={styles.dot}
+                    initial={reduceMotion ? false : { scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ type: "spring", stiffness: 340, damping: 16 }}
+                    aria-hidden
+                  >
+                    <span className={styles.dotCore} />
+                    <span className={styles.dotRing} />
+                  </motion.span>
+
+                  <article className={styles.card}>
+                    <header className={styles.cardHeader}>
+                      <div className={styles.cardTitleBlock}>
+                        {companyUrl ? (
+                          <a
+                            href={companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.companyLink}
+                          >
+                            <h3>{exp.company}</h3>
+                            <ExternalLink size={14} aria-hidden />
+                          </a>
+                        ) : (
+                          <h3>{exp.company}</h3>
+                        )}
+                        <p className={styles.role}>{exp.role}</p>
+                      </div>
+                      <span className={styles.periodMobile}>{periodLabel}</span>
+                    </header>
+
+                    <ul className={styles.projects}>
+                      {exp.projects.map((project, projectIndex) => {
+                        const tech =
+                          experienceTech[companyIndex]?.[projectIndex] ?? [];
+                        return (
+                          <li key={project.name} className={styles.project}>
+                            <h4>{project.name}</h4>
+                            <div className={styles.meta}>
+                              {project.customer ? (
+                                <span>
+                                  {t("customer")}: {project.customer}
                                 </span>
-                              ))}
+                              ) : null}
+                              {project.teamSize ? (
+                                <span>
+                                  {t("teamSize")}: {project.teamSize}
+                                </span>
+                              ) : null}
                             </div>
-                          ) : null}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </motion.article>
-            ))}
-          </div>
+                            <ProjectHighlights
+                              highlights={project.highlights}
+                              showMoreLabel={t("showMore")}
+                              showLessLabel={t("showLess")}
+                            />
+                            {tech.length > 0 ? (
+                              <div className={styles.tech}>
+                                {tech.map((item) => (
+                                  <span key={item} className="tech-chip">
+                                    {item}
+                                  </span>
+                                ))}
+                              </div>
+                            ) : null}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </article>
+                </motion.li>
+              );
+            })}
+          </ol>
         </div>
       </div>
     </section>

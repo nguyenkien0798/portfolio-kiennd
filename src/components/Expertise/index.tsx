@@ -37,7 +37,7 @@ export default function Expertise() {
         <ScrambleText text={t("title")} className="section-heading" />
         <p className="section-lead">{t("subtitle")}</p>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {expertiseKeys.map((key, index) => {
             const Icon = icons[key];
             return (
@@ -82,35 +82,7 @@ export default function Expertise() {
           })}
         </div>
 
-        <div className="mt-10 grid items-start gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <motion.div
-            className="glass-card p-6 sm:p-8"
-            initial={reduceMotion ? false : { opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <h3 className="font-display text-xl font-semibold text-foreground">
-              {t("impactTitle")}
-            </h3>
-            <p className="mt-3 text-muted">{t("impactDesc")}</p>
-            <ul className="mt-6 space-y-3">
-              {expertiseHighlights.map((key, i) => (
-                <motion.li
-                  key={key}
-                  className="flex items-start gap-3 text-sm text-light-slate"
-                  initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.15 + i * 0.08, duration: 0.4 }}
-                >
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                  {t(`highlights.${key}`)}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-
+        <div className="mt-6 space-y-4">
           <motion.div
             className={`glass-card overflow-hidden ${styles.codePanel}`}
             initial={reduceMotion ? false : { opacity: 0, y: 24 }}
@@ -169,6 +141,34 @@ export default function Expertise() {
                 {"}"}
               </code>
             </pre>
+          </motion.div>
+
+          <motion.div
+            className="glass-card p-6 sm:p-8"
+            initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <h3 className="font-display text-xl font-semibold text-foreground">
+              {t("impactTitle")}
+            </h3>
+            <p className="mt-3 text-muted">{t("impactDesc")}</p>
+            <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
+              {expertiseHighlights.map((key, i) => (
+                <motion.li
+                  key={key}
+                  className="flex items-start gap-3 text-sm text-light-slate"
+                  initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.15 + i * 0.08, duration: 0.4 }}
+                >
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                  {t(`highlights.${key}`)}
+                </motion.li>
+              ))}
+            </ul>
           </motion.div>
         </div>
       </div>

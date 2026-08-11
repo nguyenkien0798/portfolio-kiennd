@@ -45,7 +45,7 @@
     "title": "Frontend Expertise",
     "subtitle": "Modern, responsive interfaces focused on clarity, performance, and maintainable architecture.",
     "impactTitle": "Impactful Visual Experience",
-    "impactDesc": "I focus on interfaces that work reliably and feel polished — responsive layouts, smooth interactions, and high performance.",
+    "impactDesc": "My focus is on creating interfaces that not only function perfectly but also delight users with fluid animations, responsive design, and high performance.",
     "codeTitle": "Component.tsx",
     "items": {
       "uiux": {
@@ -75,10 +75,10 @@
     },
     "highlights": {
       "interactive": "Interactive and responsive interfaces",
-      "animations": "Subtle motion and micro-interactions",
+      "animations": "Advanced animations and micro-interactions",
       "architecture": "Scalable component architecture",
-      "pwa": "Maintainable, reusable UI systems",
-      "seo": "Accessibility and SEO-minded structure"
+      "pwa": "Progressive Web Applications (PWA)",
+      "seo": "SEO and accessibility optimization"
     }
   },
   "experience": {
@@ -89,7 +89,9 @@
     "teamSize": "Team size",
     "technologies": "Technologies",
     "showMore": "Show more",
-    "showLess": "Show less"
+    "showLess": "Show less",
+    "ongoing": "Ongoing",
+    "now": "Now"
   },
   "educationSection": {
     "title": "Education",
@@ -117,8 +119,8 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "builtBy": "Designed & built by",
-    "builtWith": "Built with Next.js & Tailwind CSS"
+    "builtBy": "Designed & developed by",
+    "builtWith": "Next.js · Tailwind CSS"
   },
   "language": {
     "en": "English",
