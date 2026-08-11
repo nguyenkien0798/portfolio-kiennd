@@ -7,19 +7,15 @@
   "nav": {
     "home": "trang chủ",
     "projects": "dự án",
+    "expertise": "chuyên môn",
     "experience": "kinh nghiệm",
     "contact": "liên hệ",
     "contactCta": "Liên hệ",
-    "brand": "SOFTWARE ENGINEER",
-    "about": "Giới thiệu",
-    "education": "Học vấn",
-    "skills": "Kỹ năng"
+    "brand": "SOFTWARE ENGINEER"
   },
   "hero": {
     "greeting": "Xin chào, tôi là",
-    "role": "FRONT-END ENGINEER",
-    "roleAlt1": "REACT DEVELOPER",
-    "roleAlt2": "NEXT.JS SPECIALIST",
+    "role": "FRONT-END DEVELOPER",
     "displayName": "KIEN NGUYEN DINH",
     "lead": "Phát triển <highlight>Frontend</highlight> với sự tập trung và đam mê tạo ra các giải pháp mạnh mẽ, sáng tạo. Kinh nghiệm của tôi bao gồm kỹ thuật <highlight>front-end</highlight> với React và Next.js, giúp xây dựng giao diện hoàn chỉnh và tinh tế. Tôi luôn tìm kiếm thử thách mới để học và áp dụng công nghệ mới nhất, đảm bảo sản phẩm hiệu năng cao, bền vững và mở rộng được.",
     "viewExperience": "Xem dự án",
@@ -37,7 +33,13 @@
     "frontEnd": "Chuyên môn Front-End",
     "frontEndDesc": "Giao diện với React, Next.js và tương tác được thiết kế kỹ",
     "delivery": "Triển khai tin cậy",
-    "deliveryDesc": "Sản phẩm doanh nghiệp với API, state management và UI mở rộng được"
+    "deliveryDesc": "Sản phẩm doanh nghiệp với API, state management và UI mở rộng được",
+    "prev": "Dự án trước",
+    "next": "Dự án tiếp",
+    "slideOf": "{current} / {total}",
+    "viewLive": "Xem live",
+    "viewCode": "Mã nguồn",
+    "dragHint": "Kéo hoặc dùng mũi tên để xem"
   },
   "expertise": {
     "title": "Chuyên môn Frontend",
@@ -85,7 +87,9 @@
     "projects": "Dự án",
     "customer": "Khách hàng",
     "teamSize": "Quy mô team",
-    "technologies": "Công nghệ"
+    "technologies": "Công nghệ",
+    "showMore": "Xem thêm",
+    "showLess": "Thu gọn"
   },
   "educationSection": {
     "title": "Học vấn",
@@ -97,7 +101,11 @@
     "viewProfile": "Xem hồ sơ Github",
     "repos": "Repositories",
     "focus": "Tập trung Frontend",
-    "stack": "React · Next.js · TypeScript"
+    "stack": "React · Next.js · TypeScript",
+    "pinned": "Repo nổi bật",
+    "stars": "Open source",
+    "viewRepo": "Xem repo",
+    "liveDemo": "Demo live"
   },
   "contact": {
     "title": "Liên hệ",
@@ -105,15 +113,7 @@
     "description": "Tôi đang mở cho các cơ hội mới. Dù bạn có câu hỏi hay chỉ muốn chào hỏi, tôi sẽ cố gắng phản hồi sớm nhất!",
     "sayHello": "Gửi lời chào",
     "phone": "Điện thoại",
-    "location": "Địa điểm",
-    "interests": "Sở thích",
-    "sendMessage": "Gửi tin nhắn",
-    "name": "Họ tên",
-    "namePlaceholder": "Tên của bạn",
-    "email": "Email",
-    "message": "Nội dung",
-    "messagePlaceholder": "Nội dung tin nhắn...",
-    "sendEmail": "Gửi email"
+    "location": "Địa điểm"
   },
   "footer": {
     "rights": "Đã đăng ký bản quyền.",
@@ -128,7 +128,6 @@
   "personal": {
     "name": "Kiên Nguyễn Đình",
     "title": "Kỹ sư Front-end",
-    "tagline": "Xây dựng ứng dụng web hiệu năng cao, giao diện đẹp và dễ bảo trì",
     "summary": "Kỹ sư Frontend với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
     "location": "Đà Nẵng, Việt Nam"
   },
@@ -143,18 +142,6 @@
       "degree": "Chuyên ngành: Front-end",
       "period": "08/2022 - 01/2023"
     }
-  ],
-  "softSkills": [
-    "Tiếng Anh – Khả năng làm việc cơ bản",
-    "Chăm chỉ và có trách nhiệm",
-    "Làm việc dưới áp lực và đúng deadline",
-    "Tinh thần đồng đội, ham học hỏi và chia sẻ",
-    "Thân thiện, hòa đồng trong môi trường nhóm"
-  ],
-  "interests": [
-    "Phim ảnh",
-    "Âm nhạc",
-    "Bóng đá"
   ],
   "experiences": [
     {

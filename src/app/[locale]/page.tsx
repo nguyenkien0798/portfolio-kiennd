@@ -10,6 +10,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import ChatFab from "@/components/ChatFab";
+import MouseGlow from "@/components/MouseGlow";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -22,16 +23,17 @@ export default async function Home({ params }: Props) {
 
   return (
     <>
+      <MouseGlow />
       <Header />
-      <main>
+      <main className="relative z-[1] overflow-x-clip">
         <Hero />
         <Reveal>
           <Projects />
         </Reveal>
-        <Reveal>
+        <Reveal delayMs={40}>
           <Expertise />
         </Reveal>
-        <Reveal>
+        <Reveal delayMs={60}>
           <Experience />
         </Reveal>
         <Reveal>

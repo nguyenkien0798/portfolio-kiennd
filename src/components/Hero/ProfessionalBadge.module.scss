@@ -2,12 +2,12 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
   overflow: hidden;
-  padding: 0.65rem 1.15rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
-  background: color-mix(in srgb, var(--card) 85%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  background: color-mix(in srgb, var(--card) 88%, transparent);
   cursor: default;
   user-select: none;
 }
@@ -18,7 +18,7 @@
   border-radius: inherit;
   background: radial-gradient(
     circle at 40% 40%,
-    color-mix(in srgb, var(--accent) 22%, transparent),
+    color-mix(in srgb, var(--accent) 18%, transparent),
     transparent 70%
   );
   animation: glowPulse 2.6s ease-in-out infinite;
@@ -36,7 +36,7 @@
     transparent 60%
   );
   transform: translateX(-120%);
-  animation: shimmer 2.8s linear infinite;
+  animation: shimmerSweep 2.8s linear infinite alternate;
   pointer-events: none;
 }
 
@@ -45,6 +45,7 @@
   z-index: 1;
   display: inline-flex;
   color: var(--accent);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 45%, transparent));
 }
 
 .text {
@@ -54,24 +55,36 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #c9d0e8;
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--muted) 85%, #fff),
+    #edf0fc,
+    var(--accent),
+    #edf0fc,
+    color-mix(in srgb, var(--muted) 85%, #fff)
+  );
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes glowPulse {
   0%,
   100% {
-    opacity: 0.4;
+    opacity: 0.45;
   }
   50% {
     opacity: 0.85;
   }
 }
 
-@keyframes shimmer {
-  0% {
+@keyframes shimmerSweep {
+  from {
     transform: translateX(-120%);
   }
-  100% {
+  to {
     transform: translateX(120%);
   }
 }
@@ -80,5 +93,12 @@
   .glow,
   .shimmer {
     animation: none;
+  }
+
+  .text {
+    color: #c9d0e8;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
   }
 }

@@ -7,12 +7,14 @@ type RevealProps = {
   children: ReactNode;
   className?: string;
   delayMs?: number;
+  variant?: "fade" | "rise" | "clip";
 };
 
 export default function Reveal({
   children,
   className = "",
   delayMs = 0,
+  variant = "clip",
 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -38,7 +40,9 @@ export default function Reveal({
   return (
     <div
       ref={ref}
-      className={`${styles.reveal} ${visible ? styles.revealVisible : ""} ${className}`}
+      className={`${styles.reveal} ${styles[variant]} ${
+        visible ? styles.revealVisible : ""
+      } ${className}`}
       style={{ transitionDelay: visible ? `${delayMs}ms` : "0ms" }}
     >
       {children}

@@ -1,21 +1,40 @@
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
+  overflow-x: clip;
+  will-change: opacity, transform, filter;
+}
+
+.fade {
+  transition: opacity 0.65s var(--easing);
+}
+
+.rise {
+  transform: translateY(24px);
   transition:
-    opacity 0.6s ease-out,
-    transform 0.6s ease-out;
-  will-change: opacity, transform;
+    opacity 0.7s var(--easing),
+    transform 0.7s var(--easing);
+}
+
+.clip {
+  transform: translateY(28px);
+  filter: blur(6px);
+  transition:
+    opacity 0.75s var(--easing),
+    transform 0.75s var(--easing),
+    filter 0.75s var(--easing);
 }
 
 .revealVisible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  filter: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
+    filter: none;
     transition: none;
   }
 }

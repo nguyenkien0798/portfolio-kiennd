@@ -2,8 +2,21 @@ import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { JetBrains_Mono, Outfit } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.scss";
+
+const outfit = Outfit({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
 
 type Props = {
   children: React.ReactNode;
@@ -57,7 +70,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${outfit.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}

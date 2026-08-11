@@ -7,19 +7,15 @@
   "nav": {
     "home": "home",
     "projects": "projects",
+    "expertise": "expertise",
     "experience": "experience",
     "contact": "contact",
     "contactCta": "Contact me",
-    "brand": "SOFTWARE ENGINEER",
-    "about": "About",
-    "education": "Education",
-    "skills": "Skills"
+    "brand": "SOFTWARE ENGINEER"
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "role": "FRONT-END ENGINEER",
-    "roleAlt1": "REACT DEVELOPER",
-    "roleAlt2": "NEXT.JS SPECIALIST",
+    "role": "FRONT-END DEVELOPER",
     "displayName": "KIEN NGUYEN DINH",
     "lead": "<highlight>Frontend</highlight> development with a pronounced focus and enthusiasm for creating powerful and innovative solutions. My experience covers <highlight>front-end</highlight> engineering with React and Next.js, allowing me to build complete, polished interfaces. I am constantly looking for new challenges that allow me to learn and apply the latest technologies, ensuring the delivery of robust, scalable, and high-performance products.",
     "viewExperience": "View projects",
@@ -37,7 +33,13 @@
     "frontEnd": "Front-End Expertise",
     "frontEndDesc": "Interfaces with React, Next.js and thoughtful interaction design",
     "delivery": "Reliable Delivery",
-    "deliveryDesc": "Enterprise and product work with APIs, state management, and scalable UI"
+    "deliveryDesc": "Enterprise and product work with APIs, state management, and scalable UI",
+    "prev": "Previous project",
+    "next": "Next project",
+    "slideOf": "{current} / {total}",
+    "viewLive": "Live site",
+    "viewCode": "Source",
+    "dragHint": "Drag or use arrows to explore"
   },
   "expertise": {
     "title": "Frontend Expertise",
@@ -85,7 +87,9 @@
     "projects": "Projects",
     "customer": "Customer",
     "teamSize": "Team size",
-    "technologies": "Technologies"
+    "technologies": "Technologies",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "educationSection": {
     "title": "Education",
@@ -97,7 +101,11 @@
     "viewProfile": "See the Github profile",
     "repos": "Repositories",
     "focus": "Frontend focus",
-    "stack": "React · Next.js · TypeScript"
+    "stack": "React · Next.js · TypeScript",
+    "pinned": "Pinned work",
+    "stars": "Open source",
+    "viewRepo": "View repo",
+    "liveDemo": "Live demo"
   },
   "contact": {
     "title": "Contact",
@@ -105,15 +113,7 @@
     "description": "I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     "sayHello": "Say Hello",
     "phone": "Phone",
-    "location": "Location",
-    "interests": "Interests",
-    "sendMessage": "Send a message",
-    "name": "Name",
-    "namePlaceholder": "Your name",
-    "email": "Email",
-    "message": "Message",
-    "messagePlaceholder": "Your message...",
-    "sendEmail": "Send email"
+    "location": "Location"
   },
   "footer": {
     "rights": "All rights reserved.",
@@ -128,7 +128,6 @@
   "personal": {
     "name": "Kien Nguyen Dinh",
     "title": "Front-end Engineer",
-    "tagline": "Building high-performance web apps with clean, maintainable interfaces",
     "summary": "Frontend Engineer with over 4 years of experience building scalable and high-performance web applications. Experienced in ReactJS, NextJS, and modern frontend development practices. Skilled in developing responsive user interfaces, integrating APIs, and optimizing application performance. Passionate about building clean, maintainable code and continuously improving technical expertise.",
     "location": "Da Nang, Vietnam"
   },
@@ -143,18 +142,6 @@
       "degree": "Major: Front-end",
       "period": "Aug, 2022 - Jan, 2023"
     }
-  ],
-  "softSkills": [
-    "English – Basic working proficiency",
-    "Hardworking and responsible",
-    "Able to work under pressure and meet deadlines",
-    "Strong teamwork spirit, eager to learn and share knowledge",
-    "Friendly and sociable in team environments"
-  ],
-  "interests": [
-    "Movies",
-    "Music",
-    "Football"
   ],
   "experiences": [
     {

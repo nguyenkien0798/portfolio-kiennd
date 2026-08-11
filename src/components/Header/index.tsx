@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { navAnchors } from "@/data/portfolio";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -43,15 +43,17 @@ export default function Header() {
       }`}
     >
       <nav className="container-page flex items-center justify-between">
-        <a
+        <motion.a
           href="#home"
           className="text-sm font-bold uppercase tracking-[0.2em] text-accent sm:text-base"
+          whileHover={{ letterSpacing: "0.28em" }}
+          transition={{ duration: 0.25 }}
         >
           {t("brand")}
-        </a>
+        </motion.a>
 
-        <div className="hidden items-center gap-10 md:flex">
-          <ul className="flex items-center gap-8">
+        <div className="hidden items-center gap-6 lg:gap-10 md:flex">
+          <ul className="flex items-center gap-5 lg:gap-8">
             {navAnchors.map((link) => {
               const isActive = active === link.href;
               return (
@@ -70,6 +72,7 @@ export default function Header() {
                     <motion.span
                       layoutId="nav-underline"
                       className="absolute -bottom-1 left-0 right-0 h-px bg-accent"
+                      transition={{ type: "spring", stiffness: 380, damping: 28 }}
                     />
                   ) : null}
                 </li>
@@ -93,23 +96,37 @@ export default function Header() {
         </div>
       </nav>
 
-      {isOpen ? (
-        <div className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
-          <ul className="container-page flex flex-col gap-1 py-4">
-            {navAnchors.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="block rounded-lg px-3 py-2.5 text-sm lowercase text-muted transition-colors hover:bg-card hover:text-accent"
-                  onClick={() => setIsOpen(false)}
+      <AnimatePresence>
+        {isOpen ? (
+          <motion.div
+            className="border-t border-border bg-background/95 backdrop-blur-xl md:hidden"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            style={{ overflow: "hidden" }}
+          >
+            <ul className="container-page flex flex-col gap-1 py-4">
+              {navAnchors.map((link, i) => (
+                <motion.li
+                  key={link.href}
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.05 + i * 0.05 }}
                 >
-                  {t(link.key)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+                  <a
+                    href={link.href}
+                    className="block rounded-lg px-3 py-2.5 text-sm lowercase text-muted transition-colors hover:bg-card hover:text-accent"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {t(link.key)}
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </header>
   );
 }

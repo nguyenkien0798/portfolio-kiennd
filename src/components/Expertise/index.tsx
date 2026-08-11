@@ -1,3 +1,6 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import {
   expertiseHighlights,
@@ -11,6 +14,8 @@ import {
   Workflow,
   Palette,
 } from "lucide-react";
+import ScrambleText from "@/components/ScrambleText";
+import styles from "./Expertise.module.scss";
 
 const icons = {
   uiux: Palette,
@@ -23,53 +28,96 @@ const icons = {
 
 export default function Expertise() {
   const t = useTranslations("expertise");
+  const reduceMotion = useReducedMotion();
 
   return (
     <section id="expertise" className="section-block">
       <div className="container-page">
         <p className="section-eyebrow">{t("title")}</p>
-        <h2 className="section-heading">{t("title")}</h2>
+        <ScrambleText text={t("title")} className="section-heading" />
         <p className="section-lead">{t("subtitle")}</p>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {expertiseKeys.map((key) => {
+          {expertiseKeys.map((key, index) => {
             const Icon = icons[key];
             return (
-              <article key={key} className="glass-card p-5">
-                <div className="mb-4 inline-flex rounded-lg border border-accent/20 bg-accent/10 p-2.5 text-accent">
+              <motion.article
+                key={key}
+                className="glass-card p-5"
+                initial={
+                  reduceMotion ? false : { opacity: 0, y: 28 }
+                }
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.35 }}
+                transition={{
+                  delay: index * 0.07,
+                  duration: 0.55,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                whileHover={
+                  reduceMotion
+                    ? undefined
+                    : { y: -6, transition: { duration: 0.25 } }
+                }
+              >
+                <motion.div
+                  className={styles.icon}
+                  whileHover={
+                    reduceMotion
+                      ? undefined
+                      : { rotate: [-4, 4, 0], scale: 1.08 }
+                  }
+                  transition={{ duration: 0.45 }}
+                >
                   <Icon size={18} />
-                </div>
+                </motion.div>
                 <h3 className="font-display text-base font-semibold text-foreground">
                   {t(`items.${key}.title`)}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
                   {t(`items.${key}.desc`)}
                 </p>
-              </article>
+              </motion.article>
             );
           })}
         </div>
 
         <div className="mt-10 grid items-start gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="glass-card p-6 sm:p-8">
+          <motion.div
+            className="glass-card p-6 sm:p-8"
+            initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
             <h3 className="font-display text-xl font-semibold text-foreground">
               {t("impactTitle")}
             </h3>
             <p className="mt-3 text-muted">{t("impactDesc")}</p>
             <ul className="mt-6 space-y-3">
-              {expertiseHighlights.map((key) => (
-                <li
+              {expertiseHighlights.map((key, i) => (
+                <motion.li
                   key={key}
                   className="flex items-start gap-3 text-sm text-light-slate"
+                  initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.15 + i * 0.08, duration: 0.4 }}
                 >
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                   {t(`highlights.${key}`)}
-                </li>
+                </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="glass-card overflow-hidden">
+          <motion.div
+            className={`glass-card overflow-hidden ${styles.codePanel}`}
+            initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="flex items-center gap-2 border-b border-border px-4 py-3">
               <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
               <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
@@ -121,7 +169,7 @@ export default function Expertise() {
                 {"}"}
               </code>
             </pre>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

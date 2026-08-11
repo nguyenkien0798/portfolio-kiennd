@@ -12,6 +12,8 @@ export default function MouseGlow() {
 
     if (prefersReducedMotion || !hasFinePointer) return;
 
+    document.documentElement.dataset.cursorGlow = "on";
+
     const onMouseMove = (event: MouseEvent) => {
       document.documentElement.style.setProperty(
         "--mouse-x",
@@ -24,7 +26,10 @@ export default function MouseGlow() {
     };
 
     window.addEventListener("mousemove", onMouseMove, { passive: true });
-    return () => window.removeEventListener("mousemove", onMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      delete document.documentElement.dataset.cursorGlow;
+    };
   }, []);
 
   return <div className={styles.glow} aria-hidden />;
