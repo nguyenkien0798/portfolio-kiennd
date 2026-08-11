@@ -125,12 +125,6 @@ export const githubRepos = [
     description: "Phone store e-commerce frontend with Redux Saga",
     language: "JavaScript",
   },
-  {
-    name: "pagetekup",
-    url: "https://github.com/nguyenkien0798/pagetekup",
-    description: "UI practice and landing page experiments",
-    language: "HTML",
-  },
 ] as const;
 
 export const expertiseKeys = [

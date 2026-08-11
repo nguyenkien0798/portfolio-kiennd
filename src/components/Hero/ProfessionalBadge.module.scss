@@ -1,42 +1,67 @@
+.shell {
+  position: relative;
+  display: inline-flex;
+  padding: 1px;
+  border-radius: 999px;
+  overflow: hidden;
+  cursor: default;
+  user-select: none;
+}
+
+.beam {
+  position: absolute;
+  inset: -120%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 250deg,
+    color-mix(in srgb, var(--accent) 55%, transparent) 285deg,
+    #edf0fc 310deg,
+    color-mix(in srgb, var(--accent) 70%, #fff) 330deg,
+    transparent 360deg
+  );
+  animation: beamSpin 3.8s linear infinite;
+  pointer-events: none;
+}
+
+.glow {
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at 40% 40%,
+    color-mix(in srgb, var(--accent) 16%, transparent),
+    transparent 72%
+  );
+  animation: glowPulse 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .badge {
   position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
   overflow: hidden;
   padding: 0.7rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
-  background: color-mix(in srgb, var(--card) 88%, transparent);
-  cursor: default;
-  user-select: none;
+  background: color-mix(in srgb, var(--card) 94%, transparent);
+  backdrop-filter: blur(8px);
 }
 
-.glow {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: radial-gradient(
-    circle at 40% 40%,
-    color-mix(in srgb, var(--accent) 18%, transparent),
-    transparent 70%
-  );
-  animation: glowPulse 2.6s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.shimmer {
+.innerShimmer {
   position: absolute;
   inset: 0;
   border-radius: inherit;
   background: linear-gradient(
     105deg,
-    transparent 40%,
-    rgba(255, 255, 255, 0.14) 50%,
-    transparent 60%
+    transparent 38%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 62%
   );
-  transform: translateX(-120%);
-  animation: shimmerSweep 2.8s linear infinite alternate;
+  transform: translateX(-130%);
+  animation: innerShimmer 3.2s ease-in-out infinite;
   pointer-events: none;
 }
 
@@ -51,54 +76,108 @@
 .text {
   position: relative;
   z-index: 1;
+  display: inline-flex;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.letter {
+  display: inline-block;
   background-image: linear-gradient(
     90deg,
-    color-mix(in srgb, var(--muted) 85%, #fff),
-    #edf0fc,
-    var(--accent),
-    #edf0fc,
-    color-mix(in srgb, var(--muted) 85%, #fff)
+    #aeb6d4 0%,
+    #edf0fc 35%,
+    var(--accent) 50%,
+    #edf0fc 65%,
+    #aeb6d4 100%
   );
-  background-size: 200% 100%;
-  background-position: 0% 50%;
+  background-size: 240% 100%;
+  background-position: calc(var(--i) * 12%) 50%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  will-change: transform, opacity, filter, background-position;
+}
+
+.letter[data-motion="on"] {
+  animation:
+    letterShine 3.6s linear infinite,
+    letterWave 2.8s ease-in-out infinite;
+  animation-delay:
+    calc(var(--i) * -0.14s),
+    calc(0.75s + var(--i) * 0.07s);
+}
+
+@keyframes beamSpin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes glowPulse {
   0%,
   100% {
-    opacity: 0.45;
+    opacity: 0.4;
   }
   50% {
-    opacity: 0.85;
+    opacity: 0.75;
   }
 }
 
-@keyframes shimmerSweep {
-  from {
-    transform: translateX(-120%);
+@keyframes innerShimmer {
+  0% {
+    transform: translateX(-130%);
   }
-  to {
-    transform: translateX(120%);
+  45% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+@keyframes letterShine {
+  0% {
+    background-position: calc(var(--i) * 12%) 50%;
+  }
+  100% {
+    background-position: calc(var(--i) * 12% + 240%) 50%;
+  }
+}
+
+@keyframes letterWave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.5px);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .beam,
   .glow,
-  .shimmer {
+  .innerShimmer {
     animation: none;
   }
 
-  .text {
+  .shell {
+    padding: 0;
+    border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  }
+
+  .badge {
+    background: color-mix(in srgb, var(--card) 88%, transparent);
+  }
+
+  .letter {
     color: #c9d0e8;
     background: none;
     -webkit-background-clip: unset;
     background-clip: unset;
+    animation: none;
   }
 }
