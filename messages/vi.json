@@ -104,9 +104,11 @@
     "focus": "Tập trung Frontend",
     "stack": "React · Next.js · TypeScript",
     "pinned": "Repo nổi bật",
-    "stars": "Open source",
     "viewRepo": "Xem repo",
-    "liveDemo": "Demo live"
+    "liveDemo": "Demo live",
+    "calendarHeading": "365 ngày đóng góp gần nhất",
+    "calendarTotal": "đóng góp trong năm qua",
+    "calendarError": "Hiện chưa tải được biểu đồ đóng góp."
   },
   "contact": {
     "title": "Liên hệ",

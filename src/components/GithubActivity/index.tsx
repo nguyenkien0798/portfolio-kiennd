@@ -3,15 +3,25 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ExternalLink, Github } from "lucide-react";
+import { GitHubCalendar } from "react-github-calendar";
 import { contactInfo, githubRepos } from "@/data/portfolio";
 import ScrambleText from "@/components/ScrambleText";
 import Magnetic from "@/components/Magnetic";
 import styles from "./GithubActivity.module.scss";
 
+const calendarTheme = {
+  dark: [
+    "color-mix(in srgb, var(--accent) 8%, var(--card))",
+    "color-mix(in srgb, var(--accent) 32%, var(--card))",
+    "color-mix(in srgb, var(--accent) 58%, var(--card))",
+    "color-mix(in srgb, var(--accent) 82%, var(--card))",
+    "var(--accent)",
+  ],
+};
+
 export default function GithubActivity() {
   const t = useTranslations("github");
   const reduceMotion = useReducedMotion();
-  const chartUrl = `https://ghchart.rshah.org/7a90ff/${contactInfo.githubUsername}`;
 
   return (
     <section id="github" className="section-block">
@@ -52,14 +62,24 @@ export default function GithubActivity() {
           </div>
 
           <div className={styles.chartWrap}>
-            <p className={styles.chartLabel}>{t("stars")}</p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={chartUrl}
-              alt={`${contactInfo.githubUsername} contribution chart`}
-              className={styles.chart}
-              loading="lazy"
-            />
+            <p className={styles.chartLabel}>{t("calendarHeading")}</p>
+            <div className={styles.calendar}>
+              <GitHubCalendar
+                username={contactInfo.githubUsername}
+                year="last"
+                colorScheme="dark"
+                theme={calendarTheme}
+                blockSize={12}
+                blockMargin={4}
+                blockRadius={3}
+                fontSize={13}
+                showWeekdayLabels
+                errorMessage={t("calendarError")}
+                labels={{
+                  totalCount: `{{count}} ${t("calendarTotal")}`,
+                }}
+              />
+            </div>
           </div>
 
           <div className={styles.repos}>

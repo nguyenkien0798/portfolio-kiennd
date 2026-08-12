@@ -3,15 +3,7 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import {
-  ChevronDown,
-  ExternalLink,
-  Moon,
-  Orbit,
-  Rocket,
-  Satellite,
-  Telescope,
-} from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import { experienceCompanyUrls, experienceTech } from "@/data/portfolio";
 import ScrambleText from "@/components/ScrambleText";
 import styles from "./Experience.module.scss";
@@ -31,13 +23,6 @@ type ExperienceItem = {
 };
 
 const PREVIEW_COUNT = 3;
-
-const STOP_ICONS = [Orbit, Satellite, Moon, Telescope];
-
-function extractYear(period: string) {
-  const match = period.match(/\d{4}/);
-  return match ? match[0] : period;
-}
 
 function ProjectHighlights({
   highlights,
@@ -108,39 +93,28 @@ export default function Experience() {
         <ScrambleText text={t("title")} className="section-heading" />
         <p className="section-lead">{t("subtitle")}</p>
 
-        <div className={styles.spineWrap}>
-          <span className={styles.glowA} aria-hidden />
-          <span className={styles.glowB} aria-hidden />
+        <ol className={styles.timeline}>
+          {jobs.map(({ exp, index }, visualIndex) => {
+            const companyUrl = experienceCompanyUrls[index];
 
-          <ol className={styles.spine}>
-            {jobs.map(({ exp, index }, visualIndex) => {
-              const isRight = visualIndex % 2 === 0;
-              const tint = visualIndex % 2 === 0 ? "a" : "b";
-              const companyUrl = experienceCompanyUrls[index];
-
-              const StopIcon = STOP_ICONS[index % STOP_ICONS.length];
-              const bookend = (
-                <div className={styles.bookend} data-tint={tint}>
-                  <StopIcon size={20} strokeWidth={2.1} aria-hidden />
+            return (
+              <motion.li
+                key={`${exp.company}-${index}`}
+                className={styles.row}
+                initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{
+                  duration: 0.4,
+                  delay: visualIndex * 0.05,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                <div className={styles.dotCol}>
+                  <span className={styles.dot} aria-hidden />
                 </div>
-              );
 
-              const content = (
-                <motion.article
-                  className={styles.content}
-                  initial={
-                    reduceMotion
-                      ? false
-                      : { opacity: 0, x: isRight ? 24 : -24 }
-                  }
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.25 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: visualIndex * 0.05,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                >
+                <article className={styles.content}>
                   <header className={styles.cardHeader}>
                     <div>
                       <p className={styles.role}>{exp.role}</p>
@@ -198,51 +172,11 @@ export default function Experience() {
                       );
                     })}
                   </ul>
-                </motion.article>
-              );
-
-              return (
-                <li
-                  key={`${exp.company}-${index}`}
-                  className={styles.row}
-                  data-tint={tint}
-                >
-                  {isRight ? bookend : content}
-
-                  <div className={styles.center}>
-                    <span
-                      className={`${styles.badge} ${
-                        isRight ? styles.badgeRight : styles.badgeLeft
-                      }`}
-                    >
-                      {extractYear(exp.period)}
-                    </span>
-                  </div>
-
-                  {isRight ? content : bookend}
-                </li>
-              );
-            })}
-
-            <li className={styles.finish} aria-hidden>
-              <motion.span
-                className={styles.rocket}
-                animate={
-                  reduceMotion
-                    ? undefined
-                    : { y: [0, -6, 0], rotate: [-6, -2, -6] }
-                }
-                transition={{
-                  duration: 3.2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <Rocket size={21} strokeWidth={2.25} />
-              </motion.span>
-            </li>
-          </ol>
-        </div>
+                </article>
+              </motion.li>
+            );
+          })}
+        </ol>
       </div>
     </section>
   );

@@ -25,14 +25,22 @@ export default function Magnetic({
 }: MagneticProps) {
   const reduceMotion = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
+  const restRect = useRef<DOMRect | null>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const springX = useSpring(x, { stiffness: 220, damping: 18, mass: 0.4 });
   const springY = useSpring(y, { stiffness: 220, damping: 18, mass: 0.4 });
 
-  const onMove = (event: ReactMouseEvent) => {
+  const onEnter = () => {
     if (reduceMotion || !ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
+    // Capture the resting position once per hover so the offset math
+    // doesn't compound with the element's own (already-applied) transform.
+    restRect.current = ref.current.getBoundingClientRect();
+  };
+
+  const onMove = (event: ReactMouseEvent) => {
+    if (reduceMotion || !restRect.current) return;
+    const rect = restRect.current;
     const offsetX = event.clientX - rect.left - rect.width / 2;
     const offsetY = event.clientY - rect.top - rect.height / 2;
     x.set(offsetX * strength);
@@ -40,6 +48,7 @@ export default function Magnetic({
   };
 
   const onLeave = () => {
+    restRect.current = null;
     x.set(0);
     y.set(0);
   };
@@ -52,7 +61,11 @@ export default function Magnetic({
     <motion.div
       ref={ref}
       className={className}
-      style={{ x: springX, y: springY }}
+      // Hug the content's own size (not the parent's), otherwise the
+      // hover math is computed against an oversized box and the pull
+      // looks disconnected from the cursor.
+      style={{ display: "inline-block", x: springX, y: springY }}
+      onMouseEnter={onEnter}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
     >

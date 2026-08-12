@@ -104,9 +104,11 @@
     "focus": "Frontend focus",
     "stack": "React · Next.js · TypeScript",
     "pinned": "Pinned work",
-    "stars": "Open source",
     "viewRepo": "View repo",
-    "liveDemo": "Live demo"
+    "liveDemo": "Live demo",
+    "calendarHeading": "Last 365 days of contributions",
+    "calendarTotal": "contributions in the last year",
+    "calendarError": "Couldn't load the contribution graph right now."
   },
   "contact": {
     "title": "Contact",
