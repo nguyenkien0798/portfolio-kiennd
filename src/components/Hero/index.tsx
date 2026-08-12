@@ -7,7 +7,6 @@ import gsap from "gsap";
 import { Download, Mail, Plus, X } from "lucide-react";
 import { contactInfo, heroTechStack, skills } from "@/data/portfolio";
 import SocialLinks from "@/components/SocialLinks";
-import Magnetic from "@/components/Magnetic";
 import ProfessionalBadge from "./ProfessionalBadge";
 import styles from "./Hero.module.scss";
 
@@ -163,18 +162,14 @@ const developer = {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.55 }}
           >
-            <Magnetic>
-              <a href="#contact" className="btn-primary">
-                <Mail size={16} />
-                {t("contactMe")}
-              </a>
-            </Magnetic>
-            <Magnetic>
-              <a href={contactInfo.cvPath} download className={styles.cvBtn}>
-                <Download size={16} />
-                {t("downloadCv")}
-              </a>
-            </Magnetic>
+            <a href="#contact" className="btn-primary">
+              <Mail size={16} />
+              {t("contactMe")}
+            </a>
+            <a href={contactInfo.cvPath} download className={styles.cvBtn}>
+              <Download size={16} />
+              {t("downloadCv")}
+            </a>
           </motion.div>
 
           <motion.div

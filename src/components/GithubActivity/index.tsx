@@ -6,7 +6,6 @@ import { ExternalLink, Github } from "lucide-react";
 import { GitHubCalendar } from "react-github-calendar";
 import { contactInfo, githubRepos } from "@/data/portfolio";
 import ScrambleText from "@/components/ScrambleText";
-import Magnetic from "@/components/Magnetic";
 import styles from "./GithubActivity.module.scss";
 
 const calendarTheme = {
@@ -124,17 +123,15 @@ export default function GithubActivity() {
           </div>
 
           <div className="border-t border-border px-6 py-4 sm:px-8">
-            <Magnetic strength={0.2}>
-              <a
-                href={contactInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
-              >
-                {t("viewProfile")}
-                <ExternalLink size={14} />
-              </a>
-            </Magnetic>
+            <a
+              href={contactInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+            >
+              {t("viewProfile")}
+              <ExternalLink size={14} />
+            </a>
           </div>
         </motion.div>
       </div>
