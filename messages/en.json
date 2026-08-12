@@ -90,8 +90,7 @@
     "technologies": "Technologies",
     "showMore": "Show more",
     "showLess": "Show less",
-    "ongoing": "Ongoing",
-    "now": "Now"
+    "logCommand": "git log --graph --stat"
   },
   "educationSection": {
     "title": "Education",
@@ -149,7 +148,7 @@
     {
       "company": "Personal Projects",
       "role": "Front-end Engineer",
-      "period": "",
+      "period": "Before 2022",
       "projects": [
         {
           "name": "Intern Management System",

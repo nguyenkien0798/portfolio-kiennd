@@ -90,8 +90,7 @@
     "technologies": "Công nghệ",
     "showMore": "Xem thêm",
     "showLess": "Thu gọn",
-    "ongoing": "Hiện tại",
-    "now": "Now"
+    "logCommand": "git log --graph --stat"
   },
   "educationSection": {
     "title": "Học vấn",
@@ -149,7 +148,7 @@
     {
       "company": "Dự án cá nhân",
       "role": "Kỹ sư Front-end",
-      "period": "",
+      "period": "Trước 2022",
       "projects": [
         {
           "name": "Hệ thống Quản lý Thực tập sinh",
