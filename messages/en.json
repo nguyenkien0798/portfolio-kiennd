@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Kien Nguyen Dinh | Front-end Engineer",
-    "description": "Portfolio of Kien Nguyen Dinh - Front-end Engineer with 4+ years of experience in ReactJS and NextJS. Da Nang, Vietnam.",
+    "description": "Kien Nguyen Dinh — front-end engineer in Da Nang. React and Next.js, 4+ years on product UI.",
     "keywords": "Front-end Engineer, ReactJS, NextJS, Kien Nguyen Dinh, Portfolio, Da Nang"
   },
   "nav": {
@@ -17,7 +17,7 @@
     "greeting": "Hi, I'm",
     "role": "FRONT-END DEVELOPER",
     "displayName": "KIEN NGUYEN DINH",
-    "lead": "<highlight>Frontend</highlight> development with a pronounced focus and enthusiasm for creating powerful and innovative solutions. My experience covers <highlight>front-end</highlight> engineering with React and Next.js, allowing me to build complete, polished interfaces. I am constantly looking for new challenges that allow me to learn and apply the latest technologies, ensuring the delivery of robust, scalable, and high-performance products.",
+    "lead": "I write <highlight>frontend</highlight> for products people actually live in — admin tools, portals, storefronts. Mostly <highlight>React</highlight> and Next.js. I care about how a screen feels: is it clear, is it quick, does it still hold up on a phone after a few sprints.",
     "viewExperience": "View projects",
     "contactMe": "Contact me",
     "downloadCv": "Download CV",
@@ -29,11 +29,11 @@
   },
   "projects": {
     "title": "Latest Projects",
-    "subtitle": "Each project reflects a focus on performance, clean interfaces, and a strong user experience across modern web stacks.",
+    "subtitle": "Work I can show — storefronts, booking flows, and a few product UIs from the last couple of years.",
     "frontEnd": "Front-End Expertise",
-    "frontEndDesc": "Interfaces with React, Next.js and thoughtful interaction design",
+    "frontEndDesc": "React and Next.js, with attention to how the UI moves and responds",
     "delivery": "Reliable Delivery",
-    "deliveryDesc": "Enterprise and product work with APIs, state management, and scalable UI",
+    "deliveryDesc": "APIs, state, and UI that still make sense six months later",
     "prev": "Previous project",
     "next": "Next project",
     "slideOf": "{current} / {total}",
@@ -43,47 +43,47 @@
   },
   "expertise": {
     "title": "Frontend Expertise",
-    "subtitle": "Modern, responsive interfaces focused on clarity, performance, and maintainable architecture.",
-    "impactTitle": "Impactful Visual Experience",
-    "impactDesc": "My focus is on creating interfaces that not only function perfectly but also delight users with fluid animations, responsive design, and high performance.",
+    "subtitle": "What I spend most of my time on: the UI, the data going into it, and keeping both reasonably fast.",
+    "impactTitle": "How I like an interface to feel",
+    "impactDesc": "It has to work. After that I want it to feel good — motion that isn't noisy, layouts that survive a small screen, pages that don't take forever.",
     "codeTitle": "Component.tsx",
     "items": {
       "uiux": {
-        "title": "UI/UX Design",
-        "desc": "Clean interfaces focused on usability, accessibility, and clear visual hierarchy."
+        "title": "UI / UX",
+        "desc": "Hierarchy, spacing, and whether someone can find the thing they came for."
       },
       "react": {
         "title": "React & Next.js",
-        "desc": "Applications with React and Next.js using modern patterns and best practices."
+        "desc": "This is the day job. App router, hooks, the boring parts that actually ship."
       },
       "state": {
         "title": "State Management",
-        "desc": "Redux Saga, RxJS, and React Query for predictable, scalable data flows."
+        "desc": "Redux Saga, RxJS, or React Query — whichever fits the product, not a stack for its own sake."
       },
       "api": {
         "title": "API Integration",
-        "desc": "RESTful and GraphQL integrations with solid frontend data handling."
+        "desc": "REST and GraphQL. A lot of the work is loading states, errors, and stale data."
       },
       "responsive": {
         "title": "Responsive Design",
-        "desc": "Layouts that adapt cleanly across devices with consistent experience."
+        "desc": "If it only looks right on a 1440px monitor, it isn't done."
       },
       "performance": {
         "title": "Performance",
-        "desc": "Optimization of loading, rendering, and interactivity for fast UIs."
+        "desc": "Bundle size, extra re-renders, and how the page feels on a mid-range phone."
       }
     },
     "highlights": {
-      "interactive": "Interactive and responsive interfaces",
-      "animations": "Advanced animations and micro-interactions",
-      "architecture": "Scalable component architecture",
-      "pwa": "Progressive Web Applications (PWA)",
-      "seo": "SEO and accessibility optimization"
+      "interactive": "Interactive, responsive screens",
+      "animations": "Motion and small interactions that don't get in the way",
+      "architecture": "Components you can reuse without rewriting the page",
+      "pwa": "PWA when the product actually needs it",
+      "seo": "SEO and accessibility as part of the build, not a leftover ticket"
     }
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "Roles and products I've shipped across startups and enterprise teams.",
+    "subtitle": "Companies I've been at, and the products I worked on there.",
     "projects": "Projects",
     "customer": "Customer",
     "teamSize": "Team size",
@@ -95,11 +95,11 @@
   },
   "educationSection": {
     "title": "Education",
-    "subtitle": "Academic background and specialized frontend training."
+    "subtitle": "University, then a focused frontend course."
   },
   "github": {
     "title": "Github Activity",
-    "subtitle": "Explore my open source contributions and personal repositories.",
+    "subtitle": "A few personal repos and the contribution graph.",
     "viewProfile": "See the Github profile",
     "repos": "Repositories",
     "focus": "Frontend focus",
@@ -112,7 +112,7 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Get in touch",
-    "description": "I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "description": "I'm open to new work. If you have a role, a question, or just want to say hi — email is the fastest way.",
     "sayHello": "Say Hello",
     "phone": "Phone",
     "location": "Location"
@@ -130,7 +130,7 @@
   "personal": {
     "name": "Kien Nguyen Dinh",
     "title": "Front-end Engineer",
-    "summary": "Frontend Engineer with over 4 years of experience building scalable and high-performance web applications. Experienced in ReactJS, NextJS, and modern frontend development practices. Skilled in developing responsive user interfaces, integrating APIs, and optimizing application performance. Passionate about building clean, maintainable code and continuously improving technical expertise.",
+    "summary": "Front-end engineer, 4+ years. React and Next.js. Most of my work is product UI — dashboards, vendor portals, storefronts — plus the APIs and state that feed them.",
     "location": "Da Nang, Vietnam"
   },
   "education": [
@@ -155,24 +155,24 @@
           "name": "Intern Management System",
           "teamSize": "2",
           "highlights": [
-            "Developed a web application to help universities and companies manage intern information",
-            "Participated in system research, design, and development"
+            "A small web app for universities and companies to keep intern records in one place",
+            "I was in on the research, the UI, and the actual build"
           ]
         },
         {
           "name": "Phone Store Application",
           "highlights": [
-            "Developed an e-commerce web application for browsing and purchasing smartphones online",
-            "Built core frontend modules including product listing, product detail pages, and shopping cart functionality",
-            "Implemented state management using Redux Saga"
+            "An online phone shop: browse, product pages, cart",
+            "I built the storefront pieces — list, detail, cart",
+            "State sat in Redux Saga"
           ]
         },
         {
           "name": "Car Rental Web Application",
           "highlights": [
-            "Developed a car rental e-commerce web application with vehicle listing, booking, and payment flows",
-            "Integrated PayPal payment gateway for online transactions",
-            "Built frontend architecture and implemented application state management"
+            "Car listings, booking, and checkout",
+            "PayPal for the payment step",
+            "Set up the frontend structure and how state moved around"
           ]
         }
       ]
@@ -186,26 +186,26 @@
           "name": "PGO Web Event / Admin / Landing Page",
           "teamSize": "24",
           "highlights": [
-            "Developed admin interfaces and landing pages for a health technology platform",
-            "Built responsive layouts and optimized UI performance",
-            "Integrated GraphQL APIs and managed frontend data flow"
+            "Admin screens and landing pages for a health-tech product",
+            "Made the layouts work on smaller screens and cut some of the UI weight",
+            "Wired GraphQL and kept the frontend data flow in check"
           ]
         },
         {
           "name": "Game Configuration Admin (Boom / Fish)",
           "teamSize": "4",
           "highlights": [
-            "Developed admin panels for game publishers to configure game settings",
-            "Built UI components and managed frontend logic"
+            "Admin for publishers to tweak game settings",
+            "UI components and the logic around them"
           ]
         },
         {
           "name": "PapaHub – Game Configuration Platform",
           "teamSize": "18",
           "highlights": [
-            "Developed frontend modules for a game configuration system that generates games based on templates",
-            "Built configuration interfaces for game setup and customization",
-            "Implemented API integration and optimized UI performance"
+            "Frontend for a template-based game config system",
+            "Screens to set up and customize a game",
+            "API work and a few performance passes on the UI"
           ]
         }
       ]
@@ -219,9 +219,9 @@
           "name": "SST – Ticket Sales Integration Platform (Product)",
           "teamSize": "12",
           "highlights": [
-            "Developed frontend features for a ticket sales system integrated into promoters' official websites",
-            "Implemented user interfaces for ticket purchasing and management",
-            "Built reusable components and integrated backend APIs"
+            "Ticket sales UI that sits on promoters' own sites",
+            "Buy flow and ticket management screens",
+            "Shared components, then hooked them to the backend"
           ]
         },
         {
@@ -229,9 +229,9 @@
           "customer": "Aither",
           "teamSize": "6",
           "highlights": [
-            "Developed features for a product customization website allowing users to modify product design fields",
-            "Implemented UI interactions and maintained website functionality",
-            "Fixed issues and improved system usability"
+            "A site where users change product design fields themselves",
+            "Interactions, plus keeping the thing working after launch",
+            "Bugfixes and small UX cleanups"
           ]
         }
       ]
@@ -246,13 +246,13 @@
           "customer": "MSB Bank",
           "teamSize": "44",
           "highlights": [
-            "Developed frontend modules for an enterprise e-commerce platform including admin dashboard and vendor portal functionalities",
-            "Built responsive and reusable UI components using ReactJS to support product management, vendor product listings, and customer-facing features",
-            "Implemented vendor portal features allowing suppliers to submit product offers, participate in bidding processes, and manage their product information",
-            "Implemented digital signature functionality to support secure document approval within business workflows",
-            "Developed admin dashboard features for workflow management, role-based access control (RBAC), and system configuration",
-            "Integrated backend APIs and handled frontend data flow to ensure seamless communication between services",
-            "Collaborated with backend and QA teams to resolve issues and maintain system stability and performance"
+            "Frontend for an enterprise commerce platform — admin dashboard and vendor portal",
+            "React components for product management, vendor listings, and the customer-facing bits",
+            "Vendor portal: offers, bidding, product info",
+            "Digital signatures for document approval in the workflow",
+            "Admin side: workflows, RBAC, system config",
+            "API integration and how data moved between screens",
+            "Sat with backend and QA when things broke"
           ]
         },
         {
@@ -260,11 +260,11 @@
           "customer": "Ministry of Culture",
           "teamSize": "30",
           "highlights": [
-            "Developed and maintained frontend modules for a government digitalization system managing ethnic and religious population data in Vietnam",
-            "Built reusable UI components using ReactJS",
-            "Integrated frontend with backend APIs and handled application data flow using React state management",
-            "Collaborated with backend and QA teams to ensure system stability and performance",
-            "Investigated and fixed issues to improve system reliability"
+            "Frontend for a government system that tracks ethnic and religious population data",
+            "Reusable React components",
+            "APIs plus React state for the data flow",
+            "Worked with backend and QA on stability",
+            "Tracked down bugs and patched them"
           ]
         }
       ]

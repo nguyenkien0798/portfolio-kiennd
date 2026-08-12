@@ -12,6 +12,7 @@ import ProfessionalBadge from "./ProfessionalBadge";
 import styles from "./Hero.module.scss";
 
 function highlightCode(code: string) {
+  if (!code) return "";
   return code
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
@@ -19,7 +20,7 @@ function highlightCode(code: string) {
     .replace(/(\/\/.*)/g, '<span class="code-comment">$1</span>')
     .replace(/\b(const|return)\b/g, '<span class="code-keyword">$1</span>')
     .replace(
-      /\b(developer|createUI|polishedAndFast|idea)\b/g,
+      /\b(developer|createUI|ship|idea)\b/g,
       '<span class="code-fn">$1</span>'
     )
     .replace(/('(?:\\.|[^'\\])*')/g, '<span class="code-string">$1</span>');
@@ -47,7 +48,7 @@ export default function Hero() {
     );
 
   const codeText = useMemo(
-    () => `// Front-end engineer with product focus
+    () => `// Frontend. Mostly product UI.
 const developer = {
   name: '${personalName}',
   skills: {
@@ -55,7 +56,7 @@ const developer = {
     state: ['Redux', 'React Query', 'RxJS'],
     api: ['REST', 'GraphQL']
   },
-  createUI: (idea) => polishedAndFast(idea)
+  createUI: (idea) => ship(idea)
 };`,
     [personalName]
   );

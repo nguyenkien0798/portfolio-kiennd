@@ -100,7 +100,7 @@ export default function Expertise() {
             </div>
             <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-7 text-light-slate">
               <code>
-                <span className="text-muted">{"// polished, fast UI"}</span>
+                <span className="text-muted">{"// keep the UI quick"}</span>
                 {"\n"}
                 <span className="text-sky-300">import</span> {"{"} motion {"}"}{" "}
                 <span className="text-sky-300">from</span>{" "}

@@ -110,19 +110,19 @@ export const githubRepos = [
     name: "portfolio-kiennd",
     url: "https://github.com/nguyenkien0798/portfolio-kiennd",
     homepage: "https://portfolio-kiennd.vercel.app",
-    description: "Personal portfolio — Next.js, TypeScript, Framer Motion",
+    description: "This site. Next.js, TypeScript, Framer Motion",
     language: "TypeScript",
   },
   {
     name: "car-rent",
     url: "https://github.com/nguyenkien0798/car-rent",
-    description: "Car rental web app with booking and PayPal flow",
+    description: "Rent a car — listing, booking, PayPal",
     language: "JavaScript",
   },
   {
     name: "phone-app",
     url: "https://github.com/nguyenkien0798/phone-app",
-    description: "Phone store e-commerce frontend with Redux Saga",
+    description: "Phone shop frontend. Redux Saga for state",
     language: "JavaScript",
   },
 ] as const;

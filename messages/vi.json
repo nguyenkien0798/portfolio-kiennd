@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Kiên Nguyễn Đình | Front-end Engineer",
-    "description": "Portfolio của Kiên Nguyễn Đình - Front-end Engineer với 4+ năm kinh nghiệm ReactJS, NextJS. Đà Nẵng, Việt Nam.",
+    "description": "Kiên Nguyễn Đình — front-end ở Đà Nẵng. React, Next.js, hơn 4 năm làm product UI.",
     "keywords": "Front-end Engineer, ReactJS, NextJS, Kiên Nguyễn Đình, Portfolio, Đà Nẵng"
   },
   "nav": {
@@ -17,7 +17,7 @@
     "greeting": "Xin chào, tôi là",
     "role": "FRONT-END DEVELOPER",
     "displayName": "KIEN NGUYEN DINH",
-    "lead": "Phát triển <highlight>Frontend</highlight> với sự tập trung và đam mê tạo ra các giải pháp mạnh mẽ, sáng tạo. Kinh nghiệm của tôi bao gồm kỹ thuật <highlight>front-end</highlight> với React và Next.js, giúp xây dựng giao diện hoàn chỉnh và tinh tế. Tôi luôn tìm kiếm thử thách mới để học và áp dụng công nghệ mới nhất, đảm bảo sản phẩm hiệu năng cao, bền vững và mở rộng được.",
+    "lead": "Tôi làm <highlight>frontend</highlight> cho những màn hình người ta mở cả ngày — admin, portal, storefront. Chủ yếu <highlight>React</highlight> và Next.js. Tôi để ý cảm giác của UI: có rõ không, có nhanh không, lên điện thoại còn đứng được không.",
     "viewExperience": "Xem dự án",
     "contactMe": "Liên hệ",
     "downloadCv": "Tải CV",
@@ -29,11 +29,11 @@
   },
   "projects": {
     "title": "Dự án nổi bật",
-    "subtitle": "Mỗi dự án tập trung vào hiệu năng, giao diện sạch và trải nghiệm người dùng trên stack web hiện đại.",
+    "subtitle": "Những thứ tôi có thể show: cửa hàng online, luồng đặt chỗ, và vài product UI gần đây.",
     "frontEnd": "Chuyên môn Front-End",
-    "frontEndDesc": "Giao diện với React, Next.js và tương tác được thiết kế kỹ",
-    "delivery": "Triển khai tin cậy",
-    "deliveryDesc": "Sản phẩm doanh nghiệp với API, state management và UI mở rộng được",
+    "frontEndDesc": "React, Next.js, và cách UI chuyển động / phản hồi",
+    "delivery": "Làm ra rồi giao được",
+    "deliveryDesc": "API, state, UI — để nửa năm sau vẫn đọc được",
     "prev": "Dự án trước",
     "next": "Dự án tiếp",
     "slideOf": "{current} / {total}",
@@ -43,47 +43,47 @@
   },
   "expertise": {
     "title": "Chuyên môn Frontend",
-    "subtitle": "Giao diện hiện đại, responsive, chú trọng độ rõ ràng, hiệu năng và kiến trúc dễ bảo trì.",
-    "impactTitle": "Trải nghiệm thị giác có tác động",
-    "impactDesc": "Tôi tập trung tạo giao diện không chỉ hoạt động tốt mà còn làm người dùng thích thú với animation mượt, thiết kế responsive và hiệu năng cao.",
+    "subtitle": "Phần lớn thời gian của tôi là UI, data vào UI, và giữ cả hai đừng chậm quá.",
+    "impactTitle": "Tôi muốn UI cảm giác thế nào",
+    "impactDesc": "Trước hết phải chạy đúng. Sau đó mới tới cảm giác — animation đừng ồn, layout đừng gãy trên điện thoại, trang đừng load mãi.",
     "codeTitle": "Component.tsx",
     "items": {
       "uiux": {
-        "title": "Thiết kế UI/UX",
-        "desc": "Giao diện sạch, dễ dùng, tiếp cận tốt và phân cấp thị giác rõ ràng."
+        "title": "UI / UX",
+        "desc": "Phân cấp, khoảng trắng, và người dùng có tìm được thứ họ cần không."
       },
       "react": {
         "title": "React & Next.js",
-        "desc": "Ứng dụng React và Next.js theo pattern và best practice hiện đại."
+        "desc": "Công việc hằng ngày. App router, hooks, những phần nhàm chán nhưng ship được."
       },
       "state": {
         "title": "Quản lý State",
-        "desc": "Redux Saga, RxJS và React Query cho luồng dữ liệu ổn định, mở rộng được."
+        "desc": "Redux Saga, RxJS hay React Query — cái nào hợp product thì dùng, không stack vì stack."
       },
       "api": {
         "title": "Tích hợp API",
-        "desc": "Tích hợp RESTful và GraphQL với xử lý data frontend vững chắc."
+        "desc": "REST và GraphQL. Nhiều lúc việc thật là loading, lỗi, và data cũ."
       },
       "responsive": {
-        "title": "Thiết kế Responsive",
-        "desc": "Layout thích ứng tốt trên mọi thiết bị, trải nghiệm nhất quán."
+        "title": "Responsive",
+        "desc": "Chỉ đẹp trên màn 1440px thì chưa xong."
       },
       "performance": {
         "title": "Hiệu năng",
-        "desc": "Tối ưu tải trang, render và tương tác cho UI nhanh."
+        "desc": "Bundle, re-render thừa, và trang cảm giác thế nào trên điện thoại tầm trung."
       }
     },
     "highlights": {
-      "interactive": "Giao diện tương tác và responsive",
-      "animations": "Animation nâng cao và micro-interactions",
-      "architecture": "Kiến trúc component mở rộng được",
-      "pwa": "Progressive Web Applications (PWA)",
-      "seo": "Tối ưu SEO và accessibility"
+      "interactive": "Màn hình tương tác, chạy được trên mobile",
+      "animations": "Motion và tương tác nhỏ, không làm rối tay",
+      "architecture": "Component tái dùng được, khỏi viết lại cả trang",
+      "pwa": "PWA khi product thật sự cần",
+      "seo": "SEO và accessibility làm luôn lúc build, không để ticket cuối sprint"
     }
   },
   "experience": {
     "title": "Kinh nghiệm",
-    "subtitle": "Các vai trò và sản phẩm tôi đã triển khai tại startup và doanh nghiệp.",
+    "subtitle": "Công ty tôi đã làm, và product tôi đụng tới.",
     "projects": "Dự án",
     "customer": "Khách hàng",
     "teamSize": "Quy mô team",
@@ -95,11 +95,11 @@
   },
   "educationSection": {
     "title": "Học vấn",
-    "subtitle": "Nền tảng học thuật và đào tạo chuyên sâu frontend."
+    "subtitle": "Đại học, rồi một khóa frontend chuyên."
   },
   "github": {
     "title": "Hoạt động Github",
-    "subtitle": "Xem đóng góp open source và các repository cá nhân.",
+    "subtitle": "Vài repo cá nhân và contribution graph.",
     "viewProfile": "Xem hồ sơ Github",
     "repos": "Repositories",
     "focus": "Tập trung Frontend",
@@ -111,9 +111,9 @@
   },
   "contact": {
     "title": "Liên hệ",
-    "subtitle": "Kết nối với tôi",
-    "description": "Tôi đang mở cho các cơ hội mới. Dù bạn có câu hỏi hay chỉ muốn chào hỏi, tôi sẽ cố gắng phản hồi sớm nhất!",
-    "sayHello": "Gửi lời chào",
+    "subtitle": "Nói chuyện với tôi",
+    "description": "Tôi đang mở cho công việc mới. Có role, có câu hỏi, hoặc chỉ muốn chào — mail là nhanh nhất.",
+    "sayHello": "Gửi mail",
     "phone": "Điện thoại",
     "location": "Địa điểm"
   },
@@ -130,7 +130,7 @@
   "personal": {
     "name": "Kiên Nguyễn Đình",
     "title": "Kỹ sư Front-end",
-    "summary": "Kỹ sư Frontend với hơn 4 năm kinh nghiệm phát triển ứng dụng web quy mô lớn và hiệu năng cao. Thành thạo ReactJS, NextJS và các best practice hiện đại. Đam mê viết code sạch, tối ưu hiệu năng và không ngừng nâng cao chuyên môn.",
+    "summary": "Front-end hơn 4 năm. React, Next.js. Chủ yếu product UI — dashboard, vendor portal, storefront — kèm API và state nuôi những màn đó.",
     "location": "Đà Nẵng, Việt Nam"
   },
   "education": [
@@ -155,24 +155,24 @@
           "name": "Hệ thống Quản lý Thực tập sinh",
           "teamSize": "2",
           "highlights": [
-            "Phát triển ứng dụng web quản lý thông tin thực tập sinh cho trường đại học và doanh nghiệp",
-            "Tham gia nghiên cứu, thiết kế và phát triển hệ thống"
+            "Web nhỏ để trường và công ty giữ hồ sơ thực tập sinh một chỗ",
+            "Tôi làm từ research, UI tới lúc build"
           ]
         },
         {
           "name": "Ứng dụng Cửa hàng Điện thoại",
           "highlights": [
-            "Phát triển ứng dụng thương mại điện tử mua bán điện thoại trực tuyến",
-            "Xây dựng module frontend chính: danh sách sản phẩm, trang chi tiết và giỏ hàng",
-            "Triển khai state management với Redux Saga"
+            "Shop điện thoại online: xem, trang sản phẩm, giỏ hàng",
+            "Phần storefront tôi làm: list, detail, cart",
+            "State để trong Redux Saga"
           ]
         },
         {
           "name": "Ứng dụng Web Thuê xe",
           "highlights": [
-            "Phát triển ứng dụng thuê xe: danh sách xe, đặt xe và luồng thanh toán",
-            "Tích hợp cổng thanh toán PayPal cho giao dịch online",
-            "Xây dựng kiến trúc frontend và state management"
+            "Danh sách xe, đặt xe, thanh toán",
+            "PayPal cho bước trả tiền",
+            "Setup cấu trúc frontend và cách state chạy"
           ]
         }
       ]
@@ -186,26 +186,26 @@
           "name": "PGO Web Event / Admin / Landing Page",
           "teamSize": "24",
           "highlights": [
-            "Phát triển giao diện admin và landing page cho nền tảng công nghệ y tế",
-            "Xây dựng layout responsive và tối ưu hiệu năng UI",
-            "Tích hợp GraphQL API và quản lý data flow frontend"
+            "Màn admin và landing cho sản phẩm health-tech",
+            "Layout chạy được trên màn nhỏ, UI nhẹ hơn một chút",
+            "Nối GraphQL và giữ data flow phía frontend đừng loạn"
           ]
         },
         {
           "name": "Game Configuration Admin (Boom / Fish)",
           "teamSize": "4",
           "highlights": [
-            "Phát triển admin panel cho nhà phát hành game cấu hình thiết lập game",
-            "Xây dựng UI component và quản lý logic frontend"
+            "Admin để publisher chỉnh setting game",
+            "Component UI và logic quanh nó"
           ]
         },
         {
           "name": "PapaHub – Nền tảng Cấu hình Game",
           "teamSize": "18",
           "highlights": [
-            "Phát triển module frontend cho hệ thống cấu hình game theo template",
-            "Xây dựng giao diện setup và tùy chỉnh game",
-            "Tích hợp API và tối ưu hiệu năng UI"
+            "Frontend cho hệ thống cấu hình game theo template",
+            "Màn setup và tùy chỉnh game",
+            "Nối API, rồi vét lại vài chỗ UI chậm"
           ]
         }
       ]
@@ -219,9 +219,9 @@
           "name": "SST – Nền tảng Tích hợp Bán vé (Product)",
           "teamSize": "12",
           "highlights": [
-            "Phát triển tính năng frontend cho hệ thống bán vé tích hợp vào website chính thức của nhà tổ chức",
-            "Xây dựng giao diện mua vé và quản lý vé",
-            "Tạo component tái sử dụng và tích hợp API backend"
+            "UI bán vé gắn vào site của nhà tổ chức",
+            "Luồng mua vé và màn quản lý vé",
+            "Component dùng chung, rồi nối backend"
           ]
         },
         {
@@ -229,9 +229,9 @@
           "customer": "Aither",
           "teamSize": "6",
           "highlights": [
-            "Phát triển tính năng cho website tùy chỉnh sản phẩm, cho phép người dùng chỉnh sửa các trường thiết kế",
-            "Triển khai tương tác UI và bảo trì chức năng website",
-            "Sửa lỗi và cải thiện khả năng sử dụng hệ thống"
+            "Site cho user tự sửa field thiết kế sản phẩm",
+            "Tương tác UI, rồi giữ cho nó chạy sau khi lên production",
+            "Sửa bug và chỉnh vài chỗ khó dùng"
           ]
         }
       ]
@@ -246,13 +246,13 @@
           "customer": "MSB Bank",
           "teamSize": "44",
           "highlights": [
-            "Phát triển module frontend cho nền tảng thương mại điện tử doanh nghiệp: admin dashboard và vendor portal",
-            "Xây dựng UI component responsive, tái sử dụng với ReactJS cho quản lý sản phẩm, danh sách nhà cung cấp và tính năng phía khách hàng",
-            "Triển khai vendor portal: nhà cung cấp gửi offer, tham gia đấu thầu và quản lý thông tin sản phẩm",
-            "Tích hợp chữ ký số hỗ trợ phê duyệt tài liệu an toàn trong quy trình nghiệp vụ",
-            "Phát triển admin dashboard: quản lý workflow, RBAC và cấu hình hệ thống",
-            "Tích hợp API backend và xử lý data flow frontend giữa các service",
-            "Phối hợp backend & QA để xử lý sự cố, đảm bảo ổn định và hiệu năng hệ thống"
+            "Frontend cho nền tảng thương mại doanh nghiệp — admin dashboard và vendor portal",
+            "Component React cho quản lý sản phẩm, listing nhà cung cấp, và phần phía khách",
+            "Vendor portal: gửi offer, đấu thầu, thông tin sản phẩm",
+            "Chữ ký số cho bước duyệt tài liệu trong workflow",
+            "Phía admin: workflow, RBAC, cấu hình hệ thống",
+            "Nối API và data chạy giữa các màn",
+            "Ngồi với backend và QA khi hệ thống lỗi"
           ]
         },
         {
@@ -260,11 +260,11 @@
           "customer": "Bộ Văn hóa",
           "teamSize": "30",
           "highlights": [
-            "Phát triển và bảo trì module frontend cho hệ thống số hóa quản lý dữ liệu dân tộc và tôn giáo tại Việt Nam",
-            "Xây dựng UI component tái sử dụng với ReactJS",
-            "Tích hợp API backend và quản lý data flow với state management React",
-            "Phối hợp backend & QA đảm bảo ổn định và hiệu năng hệ thống",
-            "Điều tra và sửa lỗi để nâng cao độ tin cậy hệ thống"
+            "Frontend cho hệ thống nhà nước quản lý dữ liệu dân tộc và tôn giáo",
+            "Component React dùng lại được",
+            "API cộng state React cho luồng data",
+            "Làm với backend và QA để hệ thống đứng",
+            "Truy bug rồi vá"
           ]
         }
       ]
