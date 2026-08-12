@@ -46,7 +46,11 @@
   overflow: hidden;
   padding: 0.7rem 1.2rem;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--card) 94%, transparent);
+  background: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--border) 35%, var(--card) 65%) 78%,
+    transparent
+  );
   backdrop-filter: blur(8px);
 }
 
@@ -170,7 +174,11 @@
   }
 
   .badge {
-    background: color-mix(in srgb, var(--card) 88%, transparent);
+    background: color-mix(
+      in srgb,
+      color-mix(in srgb, var(--border) 35%, var(--card) 65%) 82%,
+      transparent
+    );
   }
 
   .letter {
