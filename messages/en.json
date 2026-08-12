@@ -90,7 +90,7 @@
     "technologies": "Technologies",
     "showMore": "Show more",
     "showLess": "Show less",
-    "logCommand": "git log --graph --stat"
+    "step": "STEP {n}"
   },
   "educationSection": {
     "title": "Education",
