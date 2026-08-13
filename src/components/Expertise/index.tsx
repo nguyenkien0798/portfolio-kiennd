@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import {
@@ -29,6 +30,15 @@ const icons = {
 export default function Expertise() {
   const t = useTranslations("expertise");
   const reduceMotion = useReducedMotion();
+  const [canHover, setCanHover] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const update = () => setCanHover(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   return (
     <section id="expertise" className="section-block">
@@ -37,13 +47,15 @@ export default function Expertise() {
         <ScrambleText text={t("title")} className="section-heading" />
         <p className="section-lead">{t("subtitle")}</p>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className={`mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 ${styles.cardGrid}`}
+        >
           {expertiseKeys.map((key, index) => {
             const Icon = icons[key];
             return (
               <motion.article
                 key={key}
-                className="glass-card p-5"
+                className={`glass-card p-5 ${styles.expertiseCard}`}
                 initial={
                   reduceMotion ? false : { opacity: 0, y: 28 }
                 }
@@ -55,9 +67,9 @@ export default function Expertise() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
                 whileHover={
-                  reduceMotion
-                    ? undefined
-                    : { y: -6, transition: { duration: 0.25 } }
+                  canHover && !reduceMotion
+                    ? { y: -6, transition: { duration: 0.25 } }
+                    : undefined
                 }
               >
                 <motion.div

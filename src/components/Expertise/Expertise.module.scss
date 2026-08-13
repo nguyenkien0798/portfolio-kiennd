@@ -1,3 +1,13 @@
+.cardGrid {
+  overflow: visible;
+  padding-block: 0.35rem;
+}
+
+.expertiseCard {
+  overflow: visible;
+  transform: translateZ(0);
+}
+
 .icon {
   margin-bottom: 1rem;
   display: inline-flex;

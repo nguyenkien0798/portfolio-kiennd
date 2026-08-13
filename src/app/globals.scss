@@ -98,6 +98,19 @@ body {
     background-color: var(--card-hover);
   }
 
+  @supports (-webkit-touch-callout: none) {
+    .glass-card {
+      border-color: transparent;
+      box-shadow: inset 0 0 0 1px var(--border);
+    }
+
+    .glass-card:hover {
+      border-color: transparent;
+      box-shadow: inset 0 0 0 1px
+        color-mix(in srgb, var(--accent) 30%, var(--border));
+    }
+  }
+
   .tech-chip {
     font-family: var(--font-mono);
     @apply inline-flex items-center rounded-full border border-border bg-card px-3 py-1.5 text-xs;

@@ -25,7 +25,7 @@ export default async function Home({ params }: Props) {
     <>
       <MouseGlow />
       <Header />
-      <main className="relative z-[1] overflow-x-clip">
+      <main className="relative z-[1]">
         <Hero />
         <Reveal>
           <Projects />
