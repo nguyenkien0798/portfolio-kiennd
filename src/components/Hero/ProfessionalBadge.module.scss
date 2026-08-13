@@ -6,6 +6,14 @@
   overflow: hidden;
   cursor: default;
   user-select: none;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+@media (max-width: 767px) {
+  .shell {
+    padding: 2px;
+  }
 }
 
 .beam {
@@ -52,6 +60,18 @@
     transparent
   );
   backdrop-filter: blur(8px);
+}
+
+@media (max-width: 767px) {
+  .badge {
+    padding-block: calc(0.7rem + 2px);
+    background: color-mix(
+      in srgb,
+      color-mix(in srgb, var(--border) 35%, var(--card) 65%) 88%,
+      transparent
+    );
+    backdrop-filter: none;
+  }
 }
 
 .innerShimmer {
@@ -158,6 +178,27 @@
   }
   50% {
     transform: translateY(-2.5px);
+  }
+}
+
+@media (max-width: 767px) {
+  .letter[data-motion="on"] {
+    animation:
+      letterShine 3.6s linear infinite,
+      letterWaveMobile 2.8s ease-in-out infinite;
+    animation-delay:
+      calc(var(--i) * -0.14s),
+      calc(0.75s + var(--i) * 0.07s);
+  }
+}
+
+@keyframes letterWaveMobile {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1px);
   }
 }
 
